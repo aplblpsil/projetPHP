@@ -7,7 +7,7 @@
     </head>
     <body>
         <?php
-            
+        include('corps_page_vue.php');
         ?>
     </body>
 </html>
