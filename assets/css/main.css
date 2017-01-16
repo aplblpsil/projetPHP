@@ -99,22 +99,29 @@ footer {
     float: right;
     margin: 0 20px 10px 0 ;
 }
+#footer_right p {
+    color: dodgerblue;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+#footer_right p:hover {
+    color: #DBA901;
+    cursor: pointer;
+}
+
 
 /* -------------------------------------- */
 /* - Connexion_page (connexion_vue.php) - */
 /* -------------------------------------- */
-
 #formLogin {
-    
-    margin-top: 10.333%;
-    margin-left: 33.3333%;
-    margin-right: 33.3333%;
-}
-#formLogin fieldset {
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px;
     border: 1px solid lightgrey;
     border-radius: 3px;
     text-align: center;
+    width: 300px;
     background: rgba(245, 245, 245, 0.8);
     box-shadow: 0 0 5px 1px rgba(100, 100, 100, 0.4);
 }
