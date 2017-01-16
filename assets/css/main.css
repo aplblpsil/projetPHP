@@ -38,11 +38,40 @@ header {
 #header_left img {
     max-width: 75px;
     margin-left: 25px;
+    float: left;
 }
-
+#header_left span {
+    font-size: 22px;
+    margin: 25px 0 0 15px;
+    float: left;
+}
+#header_right {
+    float: right;
+}
 #header_right ul li {
     list-style-type: none;
     display: inline-block;
+    margin: 20px 30px 0 0;
+}
+#header_right ul li a {
+    text-decoration: none;
+    color: dodgerblue;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #BDBDBD;
+    transition: all 0.3s ease-in-out;
+}
+#header_right ul li a:hover {
+    color: #DBA901;
+    text-shadow: 0 1px 1px lightgrey;
+}
+
+/* -------------------------- */
+/* - front_page (index.php) - */
+/* -------------------------- */
+
+#container {
+    padding: 5px;
+    margin: 5px;
 }
 
 /* ---------------------------- */
@@ -50,8 +79,10 @@ header {
 /* ---------------------------- */
 
 footer {
+    width: 100%;
+    position: absolute;
     bottom: 0;
-    padding: 10px;
+    padding-top: 15px;
     border-top: solid 1px dodgerblue;
     background: linear-gradient(to top left, #F6F6F6, #F2F2F2, #FAFAFA);
     box-shadow: 0 -1px 3px 1px rgba(75, 75, 75, 0.3);
@@ -60,14 +91,11 @@ footer {
     display: inline-block;
 }
 #footer_left {
+    color: grey;
     font-size: 11px;
+    margin-left: 10px;
 }
-#footer_right p {
-    text-align: right;
+#footer_right  {
+    float: right;
+    margin: 0 20px 10px 0 ;
 }
-
-/* -------------------------- */
-/* - front_page (index.php) - */
-/* -------------------------- */
-
-

@@ -6,7 +6,7 @@
     <div id='header_right'>
         <ul>
             <li><a href="index.php?pageType=accueil">accueil</a></li>
-            <li><a href="index.php?pageType=connexion">connexion (a enlever plus tard)</a></li>
+            <li><a href="index.php?pageType=connexion">connexion</a></li>
         </ul>
     </div>
 </header>
