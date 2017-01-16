@@ -7,8 +7,8 @@
     </head>
     <body>
         <?php
-        session_start();
-        include('../vue/corps_page_vue.php');
+            session_start();
+            include('../vue/corps_vue.php');
         ?>
     </body>
 </html>
