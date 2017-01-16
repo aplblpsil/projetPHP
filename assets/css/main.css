@@ -116,6 +116,7 @@ footer {
     border-radius: 3px;
     text-align: center;
     background: rgba(245, 245, 245, 0.8);
+    box-shadow: 0 0 5px 1px rgba(100, 100, 100, 0.4);
 }
 #formLogin legend {
     padding: 0 10px;
@@ -137,7 +138,7 @@ footer {
     cursor: pointer;
 }
 #formLogin .btReset:hover {
-    background: #F5DA81;
+    background: #FA8258;
 }
 
 #formLogin .btSubmit:hover {
