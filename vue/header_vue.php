@@ -1,9 +1,13 @@
 <header>
     <div>
-        <span>Logo du projet</span> 
+        <div>
+            <span>Logo du projet</span> 
+        </div>
+        <div>
+            <ul>
+                <li><a href="index.php?pageType=accueil">accueil</a></li>
+                <li><a href="index.php?pageType=connexion">connexion (a enlever plus tard)</a></li>
+            </ul>
+        </div>
     </div>
-    <ul>
-        <li><a href="index.php?pageType=connexion">page de connexion</a></li>
-        <li><a href="index.php?pageType=accueil">page d&prime;accueil</a></li>
-    </ul>
 </header>
