@@ -9,7 +9,7 @@ and open the template in the editor.
 */
 
 /* -------------------- */
-/* - Body (index.php) - */
+/* - Body_page (index.php) - */
 /* -------------------- */
 
 html, body {
@@ -66,7 +66,7 @@ header {
 }
 
 /* -------------------------- */
-/* - front_page (index.php) - */
+/* - Front_page (index.php) - */
 /* -------------------------- */
 
 #container {
@@ -98,4 +98,48 @@ footer {
 #footer_right  {
     float: right;
     margin: 0 20px 10px 0 ;
+}
+
+/* -------------------------------------- */
+/* - Connexion_page (connexion_vue.php) - */
+/* -------------------------------------- */
+
+#formLogin {
+    
+    margin-top: 10.333%;
+    margin-left: 33.3333%;
+    margin-right: 33.3333%;
+}
+#formLogin fieldset {
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    text-align: center;
+    background: rgba(245, 245, 245, 0.8);
+}
+#formLogin legend {
+    padding: 0 10px;
+    font-style: italic;
+    text-shadow: 0 1px 1px lightgrey;
+    opacity: 0.75;
+}
+#formLogin #ztLogin, #formLogin #ztPassword {
+    margin: 5px;
+    padding: 5px;
+}
+#formLogin .btReset, #formLogin .btSubmit {
+    margin: 1px;
+    border-radius: 3px;
+    padding: 3px 7px;
+    background: #F2F2F2;
+    border: 1px solid lightgrey;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+#formLogin .btReset:hover {
+    background: #F5DA81;
+}
+
+#formLogin .btSubmit:hover {
+    background: #ACFA58;
 }
