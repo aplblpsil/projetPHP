@@ -1,0 +1,181 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10 janv. 2017, 15:28:50
+    Author     : S.Rogelet et A.Pleux.
+*/
+
+/* -------------------- */
+/* - Body_page (index.php) - */
+/* -------------------- */
+
+html, body {
+    background-color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------------------- */
+/* - Header_page (header.php) - */
+/* ---------------------------- */
+
+header {
+    border-bottom: solid 3px dodgerblue;
+    border-bottom-left-radius: 50px;
+    background: linear-gradient(to top left, #F6F6F6, #F2F2F2, #FAFAFA);
+    padding: 0 10px;
+    box-shadow: 0 2px 3px 1px rgba(50, 50, 50, 0.4);
+}
+#header_left, #header_right {
+    display: inline-block;
+}
+#header_left img {
+    max-width: 75px;
+    margin-left: 25px;
+    float: left;
+}
+#header_left span {
+    font-size: 22px;
+    margin: 25px 0 0 15px;
+    float: left;
+}
+#header_right {
+    float: right;
+}
+#header_right ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 15px 30px 0 0;
+}
+#header_right ul li a {
+    text-decoration: none;
+    color: dodgerblue;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+#header_right ul li a:hover {
+    color: #DBA901;
+    text-shadow: 0 1px 1px lightgrey;
+}
+
+/* -------------------------- */
+/* - Front_page (index.php) - */
+/* -------------------------- */
+
+#container {
+    padding: 5px;
+    margin: 5px;
+}
+
+/* ---------------------------- */
+/* - Footer_page (footer.php) - */
+/* ---------------------------- */
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-top: solid 1px dodgerblue;
+    background: linear-gradient(to top left, #F6F6F6, #F2F2F2);
+}
+#footer_left, #footer_right {
+    display: inline-block;
+}
+#footer_left {
+    color: grey;
+    font-size: 11px;
+    margin: 5px 0 0 10px;
+}
+#footer_right {
+    float: right;
+    margin: 0 20px 1px 0;
+}
+#footer_right p {
+    color: dodgerblue;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+#footer_right p:hover {
+    color: #DBA901;
+    cursor: pointer;
+}
+
+/* -------------------------------------- */
+/* - Connexion_page (connexion_vue.php) - */
+/* -------------------------------------- */
+
+#formLogin {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    text-align: center;
+    width: 350px;
+    background: rgba(250, 250, 250, 0.8);
+}
+#formLogin legend {
+    text-align: left;
+    padding: 0 10px;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 0 1px 1px lightgrey;
+    opacity: 0.60;
+}
+#formLogin #ztLogin, #formLogin #ztPassword {
+    transition: all 0.3s ease-in-out;
+    border: 1px inset lightgrey;
+    border-radius: 3px;
+    margin: 5px;
+    padding: 5px;
+}
+#formLogin #ztLogin:hover, #formLogin #ztPassword:hover {
+    border: 1px inset dodgerblue;
+}
+#formLogin .btReset, #formLogin .btSubmit {
+    margin: 1px;
+    border-radius: 3px;
+    padding: 5px 10px;
+    background: #F2F2F2;
+    border: 1px solid lightgrey;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+#formLogin .btReset:hover {
+    background: #FA8258;
+}
+
+#formLogin .btSubmit:hover {
+    background: #ACFA58;
+}
+#erreurConnexion {
+    color: red;
+    font-size: 11px;
+}
+
+/* -------------------------------------- */
+/* - 404_page (error404_vue.php) - */
+/* -------------------------------------- */
+
+#cadre_404 {
+    text-align: center;
+    margin-top: 100px;
+}
+#cadre_404 img {
+    max-width: 150px;
+}
+#cadre_404 p {
+    font-weight: bold;
+}
+#cadre_404 a {
+    text-decoration: none;
+    color: dodgerblue;
+}
