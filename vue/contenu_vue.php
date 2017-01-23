@@ -9,11 +9,11 @@
         $laPage = $_GET['pageType'];
 
         switch ($laPage) {
-            case 'connexion':       include('connexion_vue.php');          break;
-            case 'inscription':     include('inscription_vue.php');        break;
-            case 'gIncident':       include('g_incident_vue.php');         break;
-            case 'gInterventions':  include('g_interventions_vue.php');    break;
-            
+            case 'connexion':            include('connexion_vue.php');          break;
+            case 'inscription':          include('inscription_vue.php');        break;
+            case 'globalIncident':       include('g_incident_vue.php');         break;
+            case 'globalInterventions':  include('g_interventions_vue.php');    break;
+            case 'ticketUser'         :  include('ticketuser_vue.php');         break;
             default:                include('error404_vue.php');
         }
         
