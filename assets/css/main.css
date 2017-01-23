@@ -151,3 +151,39 @@ footer {
 #formLogin .btSubmit:hover {
     background: #ACFA58;
 }
+
+/* -------------------------------------- */
+/* - Inscription_page (inscription_vue.php) - */
+/* -------------------------------------- */
+#formInscription {
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    text-align: center;
+    width: 300px;
+    background: rgba(245, 245, 245, 0.8);
+    box-shadow: 0 0 5px 1px rgba(100, 100, 100, 0.4);
+}
+
+#formInscription legend {
+    padding: 0 10px;
+    font-style: italic;
+    text-shadow: 0 1px 1px lightgrey;
+    opacity: 0.75;
+}
+
+#formInscription #ztMail, #formNom #ztPrenom #ztDateNaiss #ztTel #ztSalle #ztFonction #ztMachine {
+    margin: 5px;
+    padding: 5px;
+}
+
+#formInscription .btReset:hover {
+    background: #FA8258;
+}
+
+#formInscription .btSubmit:hover {
+    background: #ACFA58;
+}
