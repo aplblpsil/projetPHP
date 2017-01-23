@@ -9,14 +9,16 @@
         $laPage = $_GET['pageType'];
 
         switch ($laPage) {
-            case 'connexion':       include('connexion_vue.php');          break;
-            case 'inscription':     include('inscription_vue.php');        break;
-            case 'gIncident':       include('g_incident_vue.php');         break;
-            case 'gInterventions':  include('g_interventions_vue.php');    break;
-            case 'deconnexion':     session_unset(); session_destroy(); 
-                                    include('accueil_vue.php');        break;
-            
-            default:                include('error404_vue.php');
+            case 'connexion':             include('connexion_vue.php');         break;
+            case 'inscription':           include('inscription_vue.php');       break;
+            case 'globalIncident':        include('g_incident_vue.php');        break;
+            case 'globalInterventions':   include('g_interventions_vue.php');   break;
+            case 'viewTicketU':           include('viewTicketUser_vue.php');    break;
+            case 'addTicketU' :           include('addTicketUser_vue.php');     break;
+            case 'deconnexion':           session_unset(); session_destroy(); 
+                                          include('accueil_vue.php');           break;
+                                      
+            default:                      include('error404_vue.php');
         }
         
     }

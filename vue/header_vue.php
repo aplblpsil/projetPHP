@@ -7,25 +7,22 @@
         <ul>
             <?php
             if(isset($_REQUEST['access'])) {
-                if($_REQUEST['access'] == 'admin' || $_REQUEST['access'] == 'user') {
-                    $fonction = $_REQUEST['access'];
+                $fonction = $_REQUEST['access'];
+                if($fonction == 'admin') {      
             ?>
                 <li><a href="index.php?pageType=accueil&access=<?php echo $fonction ?>">accueil</a></li>
                 <li><a href="index.php?pageType=deconnexion">d&eacute;connexion</a></li>
-            <?php 
-                } else { 
-            ?>
+            <?php } if($fonction == 'user') { ?>
+                <li><a href="index.php?pageType=accueil">accueil</a></li>
+                <li><a href="index.php?pageType=viewTicketU">mes tickets</a></li>
+                <li><a href="index.php?pageType=deconnexion">d&eacute;connexion</a></li>
+            <?php } else { ?>
                 <li><a href="index.php?pageType=accueil">accueil</a></li>
                 <li><a href="index.php?pageType=connexion">connexion</a></li>
-            <?php
-                }
-            } else {  
-            ?>
+            <?php } } else { ?>
                 <li><a href="index.php?pageType=accueil">accueil</a></li>
                 <li><a href="index.php?pageType=connexion">connexion</a></li>
-            <?php
-            }
-            ?>
+            <?php } ?>
         </ul>
     </div>
 </header>
