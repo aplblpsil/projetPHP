@@ -358,60 +358,42 @@ footer {
     border: 1px solid grey;
 }
 
-/* ----------------------------------------------- */
-/* - ticket utilisateur (viewTicketUser_vue.php) - */
-/* ----------------------------------------------- */
-
-#cadrelisteTicket {
-    background-color: #F7F2E0;
-    border-radius: 5px;
-    border: 1px solid lightgrey;
-    padding: 25px;
-    margin: 25px 0;
+#formLogin .btSubmit:hover {
+    background: #ACFA58;
 }
 
-/* ------------------------------------------- */
-/* - new ticket user (addTicketUser_vue.php) - */
-/* ------------------------------------------- */
-#titleNewTicket {
-    text-align: center;
-}
-#cadreNewTicket {
+/* -------------------------------------- */
+/* - Inscription_page (inscription_vue.php) - */
+/* -------------------------------------- */
+#formInscription {
+    margin-top: 15%;
     margin-left: auto;
     margin-right: auto;
-    width: 500px;
-    background-color: #F2F2F2;
-    border-radius: 5px;
-    border: 1px solid lightgrey;
-    padding: 0 25px 0px 25px;
-}
-#cadreNewTicket > div {
-    margin: 25px 0;
-}
-#cadreNewTicket #ztTitreIncident {
-    width: 300px;
-}
-#cadreNewTicket label {
-    font-weight: bold;
-    margin: 10px 5px;
-}
-#cadreNewTicket #ztTitreIncident, #cadreNewTicket #ztDate {
-    padding: 5px;
+    padding: 10px;
     border: 1px solid lightgrey;
     border-radius: 3px;
-}
-#cadreNewTicket #ztDate {
-    font-weight: bold;
+    text-align: center;
+    width: 300px;
+    background: rgba(245, 245, 245, 0.8);
+    box-shadow: 0 0 5px 1px rgba(100, 100, 100, 0.4);
 }
 
-#cadreNewTicket #ztDescription {
-    resize: none;
-    border: 1px inset grey;
-    margin: 5px;
-    border-radius: 3px;
-    width: 485px;
-    height: 200px;
+#formInscription legend {
+    padding: 0 10px;
+    font-style: italic;
+    text-shadow: 0 1px 1px lightgrey;
+    opacity: 0.75;
 }
-#cadreValidNewTicket {
-    text-align: center;
+
+#formInscription #ztMail, #formNom #ztPrenom #ztDateNaiss #ztTel #ztSalle #ztFonction #ztMachine {
+    margin: 5px;
+    padding: 5px;
+}
+
+#formInscription .btReset:hover {
+    background: #FA8258;
+}
+
+#formInscription .btSubmit:hover {
+    background: #ACFA58;
 }
