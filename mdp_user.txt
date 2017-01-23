@@ -1,0 +1,3 @@
+lors de l'authentification de l'utilisateur,
+le mot de passe de srogelet@test.fr est: steven
+il est haché avec la fonction MD5.
