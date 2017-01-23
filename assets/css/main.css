@@ -8,9 +8,53 @@ and open the template in the editor.
     Author     : S.Rogelet, A.Pleux, L.Bodu
 */
 
-/* -------------------- */
+/* ----------------------------------------------- */
+/* Style en commun (boutton, titres, cadres, ... ) */
+/* ----------------------------------------------- */
+
+.btAdd {
+    transition: all 0.2s ease-in-out;
+    background-color: #5FB404;
+    border: 1px solid #5FB404;
+    border-radius: 3px;
+    padding: 5px 7px;
+    text-decoration: none;
+    color: white;
+}
+.btAdd:hover {
+    background-color: #74DF00;
+}
+.btReset {
+    transition: all 0.2s ease-in-out;
+    background-color: #FFBF00;
+    border: 1px solid #FFBF00;
+    border-radius: 3px;
+    padding: 5px 7px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.btReset:hover {
+    background: #FACC2E;
+}
+.btSubmit {
+    transition: all 0.2s ease-in-out;
+    background-color: dodgerblue;
+    border: 1px solid dodgerblue;
+    border-radius: 3px;
+    padding: 5px 7px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.btSubmit:hover {
+    background: #58ACFA;
+}
+
+
+/* ------------------------- */
 /* - Body_page (index.php) - */
-/* -------------------- */
+/* ------------------------- */
 
 html, body {
     font-family: sans-serif;
@@ -109,10 +153,10 @@ footer {
     cursor: pointer;
 }
 
-
 /* -------------------------------------- */
 /* - Connexion_page (connexion_vue.php) - */
 /* -------------------------------------- */
+
 #formLogin {
     margin-top: 15%;
     margin-left: auto;
@@ -134,20 +178,69 @@ footer {
 #formLogin #ztLogin, #formLogin #ztPassword {
     margin: 5px;
     padding: 5px;
-}
-#formLogin .btReset, #formLogin .btSubmit {
-    margin: 1px;
     border-radius: 3px;
-    padding: 3px 7px;
-    background: #F2F2F2;
     border: 1px solid lightgrey;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
-#formLogin .btReset:hover {
-    background: #FA8258;
+#formLogin #ztLogin:hover, #formLogin #ztPassword:hover {
+    border-radius: 3px 25px 3px 3px;
+    border: 1px solid grey;
 }
 
-#formLogin .btSubmit:hover {
-    background: #ACFA58;
+/* ----------------------------------------------- */
+/* - ticket utilisateur (viewTicketUser_vue.php) - */
+/* ----------------------------------------------- */
+
+#cadrelisteTicket {
+    background-color: #F7F2E0;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    padding: 25px;
+    margin: 25px 0;
+}
+
+/* ------------------------------------------- */
+/* - new ticket user (addTicketUser_vue.php) - */
+/* ------------------------------------------- */
+#titleNewTicket {
+    text-align: center;
+}
+#cadreNewTicket {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    padding: 0 25px 0px 25px;
+}
+#cadreNewTicket > div {
+    margin: 25px 0;
+}
+#cadreNewTicket #ztTitreIncident {
+    width: 300px;
+}
+#cadreNewTicket label {
+    font-weight: bold;
+    margin: 10px 5px;
+}
+#cadreNewTicket #ztTitreIncident, #cadreNewTicket #ztDate {
+    padding: 5px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+#cadreNewTicket #ztDate {
+    font-weight: bold;
+}
+
+#cadreNewTicket #ztDescription {
+    resize: none;
+    border: 1px inset grey;
+    margin: 5px;
+    border-radius: 3px;
+    width: 485px;
+    height: 200px;
+}
+#cadreValidNewTicket {
+    text-align: center;
 }

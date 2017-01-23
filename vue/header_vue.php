@@ -7,6 +7,7 @@
         <ul>
             <li><a href="index.php?pageType=accueil">accueil</a></li>
             <li><a href="index.php?pageType=connexion">connexion</a></li>
+            <li><a href="index.php?pageType=viewTicketU">mes tickets</a></li>
         </ul>
     </div>
 </header>

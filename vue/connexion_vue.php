@@ -1,5 +1,5 @@
 <form  method="POST" action="../modele/(...).php">
-    <fieldset  id="formLogin">
+    <fieldset id="formLogin">
         <legend>Authentification</legend>
         <!-- informations de connexion -->
         <input type="text" id="ztLogin" name="ztLogin" placeholder="votre email..."><br />
