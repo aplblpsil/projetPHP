@@ -227,7 +227,7 @@ footer {
     opacity: 0.75;
 }
 
-#ztMail, #formNom, #ztPrenom, #ztDateNaiss, #ztTel, #ztSalle, #ztFonction, #ztMachine {
+#ztMail, #ztNom, #ztPrenom, #ztDateNaiss, #ztTel, #ztFonction {
     margin: 5px;
     padding: 10px;
 }
