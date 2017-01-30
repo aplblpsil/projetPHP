@@ -10,7 +10,7 @@ include ("connexionBDD.php");
         
         
         // Inscription
-        $sql = "INSERT INTO Utilisateur(mailLogin,nom,prenom,dateNaiss,tel,idFonction) "
+        $sql = "INSERT INTO Utilisateur(id,mailLogin,nom,prenom,dateNaiss,tel,idFonction) "
                 . "VALUES ('','".$mail."', '".$nom."','".$prenom."','".$date."','".$tel."'"
                 . ",".$fonction.")";
         
