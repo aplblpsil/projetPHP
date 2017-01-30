@@ -18,7 +18,7 @@ if(isset($_REQUEST['ztLogin']) && isset($_REQUEST['ztPassword'])) {
     if($fonction == 2) { $fonction = 'user'; }
 
     // Si c'est bien un utilisateur, il est connecté
-    if($dataConnect != '') {
+    if($dataConnect) {
         header("location: ../control/index.php?pageType=accueil&access=$fonction");
     // Sinon message d'erreur   
     } else {
