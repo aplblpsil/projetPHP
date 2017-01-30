@@ -20,7 +20,7 @@
                     <li><a href="index.php?pageType=viewTicketU">mes tickets</a></li>
                     <li><a href="index.php?pageType=deconnexion">d&eacute;connexion</a></li>
                     
-            <?php } if($fonction == 'gestionnaire') { $isAcces = true; /* menu du gestionnaire */ ?>
+            <?php } if($fonction == 'gestion') { $isAcces = true; /* menu du gestionnaire */ ?>
                     
                     <li><a href="index.php?pageType=accueil">accueil</a></li>
                     <li><a href="index.php?pageType=deconnexion">d&eacute;connexion</a></li>
