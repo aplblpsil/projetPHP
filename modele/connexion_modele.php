@@ -16,6 +16,7 @@ if(isset($_REQUEST['ztLogin']) && isset($_REQUEST['ztPassword'])) {
     $fonction = $dataConnect['idFonction'];
     if($fonction == 1) { $fonction = 'admin'; }
     if($fonction == 2) { $fonction = 'user'; }
+    if($fonction == 3) { $fonction = 'gestion'; }
 
     // Si c'est bien un utilisateur, il est connecté
     if($dataConnect) {
