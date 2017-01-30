@@ -59,10 +59,5 @@
         } else {
             include('accueil_vue.php');
         }
-        
-        
-        
-        
     }
-
 ?>

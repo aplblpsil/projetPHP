@@ -13,6 +13,7 @@
             
                     <li><a href="index.php?pageType=accueil&access=<?php echo $fonction ?>">accueil</a></li>
                     <li><a href="index.php?pageType=inscription&access=<?php echo $fonction ?>">Inscription</a></li>
+                    <li><a href="index.php?pageType=globalUser&access=<?php echo $fonction ?>">Liste utilisateurs</a></li>
                     <li><a href="index.php?pageType=deconnexion">d&eacute;connexion</a></li>
                     
             <?php } if($fonction == 'user') { $isAcces = true; /* menu de l'user */ ?>

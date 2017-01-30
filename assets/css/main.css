@@ -239,3 +239,13 @@ footer {
 #formInscription .btSubmit:hover {
     background: #ACFA58;
 }
+
+/* ---------------------------------------------- */
+/* - Liste des utilisateurs (listeUser_vue.php) - */
+/* ---------------------------------------------- */
+.user{
+    border: solid 3px dodgerblue;
+    border-bottom-right-radius: 40px;
+    background: linear-gradient(to top left, #F6F6F6, #F2F2F2, #FAFAFA);
+    padding: 10px;
+}
