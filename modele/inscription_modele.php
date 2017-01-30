@@ -16,8 +16,3 @@ include ("connexionBDD.php");
         
         $dbh->exec($sql);							// Execution de la requete
 	alert("enregistrement effectué");
-            
-        
-           
-
-
