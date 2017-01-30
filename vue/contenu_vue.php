@@ -1,12 +1,13 @@
 <?php
-    // la page demandée
-    $laPage = $_GET['pageType']; 
-    
-    if(!isset($laPage) ||  $laPage == 'accueil') {
+
+    if(!isset($_GET['pageType']) ||  $_GET['pageType'] == 'accueil') {
 
         include('accueil_vue.php');
 
     } else {
+        
+        // la page demandée
+        $laPage = $_GET['pageType'];
         
         if($laPage == 'connexion') {
             include('connexion_vue.php');
