@@ -13,10 +13,15 @@
         
             if($access == 'admin') {
                 switch ($laPage) {
-                    case 'connexion':             include('connexion_vue.php');                 break;
                     case 'deconnexion':           include('../modele/deconnexion_modele.php');  break;
-                    case 'inscription':           include('inscription_vue.php');               break;
+                    // gestion user
+                    case 'globalUser':            include('listeUser_vue.php');               break;
+                    case 'modifUser':             include('modifUser_vue.php');               break;
+                    case 'delUser':               include('delUser_vue.php');               break;
+                    case 'addUser':               include('addUser_vue.php');               break;                 
+                    // gestion infrastructure
                     case 'globalIncident':        include('g_incident_vue.php');                break;
+                    
                     case 'globalInterventions':   include('g_interventions_vue.php');           break;
 
                     default:                      include('error404_vue.php');
@@ -25,7 +30,6 @@
 
             if($access == 'user') { 
                 switch ($laPage) {
-                    case 'connexion':             include('connexion_vue.php');                 break;
                     case 'deconnexion':           include('../modele/deconnexion_modele.php');  break;
                     case 'viewTicketU':           include('viewTicketUser_vue.php');            break;
                     case 'viewTicketU':           include('viewTicketUser_vue.php');            break;
@@ -37,7 +41,6 @@
 
             if($access == 'gestionnaire') {
                 switch ($laPage) {
-                    case 'connexion':             include('connexion_vue.php');                 break;
                     case 'deconnexion':           include('../modele/deconnexion_modele.php');  break;
                     case 'globalIncident':        include('g_incident_vue.php');                break;
                     case 'globalInterventions':   include('g_interventions_vue.php');           break;
@@ -48,7 +51,7 @@
             }
         
         } else {
-            include('connexion_vue.php');
+            include('accueil_vue.php');
         }
         
         
