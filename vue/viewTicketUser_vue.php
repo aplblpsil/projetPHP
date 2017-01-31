@@ -10,7 +10,7 @@
             }
         ?>
     <div id='cadrelisteTicket'>
-        <p> liste des tickets a remplir ... </p>
+       <?php include('../modele/listeTicketUser_modele.php') ?>
     </div>
     <div>
         <a class='btAdd' href="index.php?pageType=addTicketU&access=Salarié">Créer un ticket d'incident</a>
