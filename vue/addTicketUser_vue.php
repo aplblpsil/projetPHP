@@ -9,7 +9,7 @@
         <div>
             <label for=''>Machine:</label>
             <select>
-                <?php //mettre la liste des machines de la BDD ?>
+                <?php include("../modele/machines_modele.php") ?>
             </select>
         </div>
         <div>
@@ -23,7 +23,7 @@
         <div>
             <label for=''>Criticité du problème:</label>
             <select>
-                <?php include("../modele/liste/criticite_modele.php") ?>
+                <?php include("../modele/criticite_modele.php") ?>
             </select>
         </div>
         <div id='cadreValidNewTicket'>

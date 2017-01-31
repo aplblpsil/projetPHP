@@ -205,7 +205,7 @@ footer {
 }
 
 /* -------------------------------------- */
-/* - Inscription_page (inscription_vue.php) - */
+/* - Inscription_page (addUser_vue.php) - */
 /* -------------------------------------- */
 #formInscription {
     margin-top: 15%;
@@ -239,3 +239,9 @@ footer {
 #formInscription .btSubmit:hover {
     background: #ACFA58;
 }
+
+/* ------------------------------------------- */
+/* - création ticket (addTicketUser_vue.php) - */
+/* ------------------------------------------- */
+
+
