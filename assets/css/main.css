@@ -187,6 +187,10 @@ footer {
     text-shadow: 0 1px 1px lightgrey;
     opacity: 0.75;
 }
+#erreurConnexion {
+    color: red;
+    font-size: 12px;
+}
 #formLogin #ztLogin, #formLogin #ztPassword {
     margin: 5px;
     padding: 5px;
@@ -239,10 +243,17 @@ footer {
     background: #ACFA58;
 }
 
+/* ----------------------------------------- */
+/* - liste ticket (viewTicketUser_vue.php) - */
+/* ----------------------------------------- */
+#msgSucces {
+    color: green;
+    font-size: 12px;
+}
+
 /* ------------------------------------------- */
 /* - création ticket (addTicketUser_vue.php) - */
 /* ------------------------------------------- */
-
 #titleNewTicket, #cadreNewTicket {
     text-align: center;
 }

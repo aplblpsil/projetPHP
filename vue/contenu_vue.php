@@ -14,16 +14,16 @@
         }
         
         // le type d'accès
-        if(isset($_GET['access'])) {
+        if(isset($_GET['access']) && $_GET['access'] != 'refuse') {
             
-            $access = $_GET['access'];  
-            
-            if($access != 'admin' && $access != 'user' && $access != 'gestion') { 
+            $access = $_GET['access']; 
+                  
+            if($access != 'Administrateur' && $access != 'Salarié' && $access != 'Gestionnaire') { 
                 
                 include('accueil_vue.php');
                 
             } else {
-                if($access == 'admin') {
+                if($access == 'Administrateur') {
                     switch ($laPage) {
                         case 'deconnexion':           include('../modele/deconnexion_modele.php');  break;
                         // gestion user
@@ -40,7 +40,7 @@
                     }
                 }
 
-                if($access == 'user') { 
+                if($access == 'Salarié') { 
                     switch ($laPage) {
                         case 'deconnexion':           include('../modele/deconnexion_modele.php');  break;
                         case 'viewTicketU':           include('viewTicketUser_vue.php');            break;
@@ -50,7 +50,7 @@
                     }
                 }
 
-                if($access == 'gestion') {
+                if($access == 'Gestionnaire') {
                     switch ($laPage) {
                         case 'deconnexion':           include('../modele/deconnexion_modele.php');  break;
                         case 'globalIncident':        include('g_incident_vue.php');                break;

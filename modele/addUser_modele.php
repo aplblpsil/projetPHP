@@ -20,7 +20,7 @@ include ("bdd_connect.php");
         $mdpMD5U = MD5($mot_de_passe);
         
         // Inscription
-        $sql = "INSERT INTO Utilisateur(mailLogin,mdp,nom,prenom,dateNaiss,tel,idFonction) "
+        $sql = "INSERT INTO utilisateur(mailLogin,mdp,nom,prenom,dateNaiss,tel,idFonction) "
                 . "VALUES ('".$mail."','".$mdpMD5U."', '".$nom."','".$prenom."','".$date."','".$tel."'"
                 . ",".$fonction.");";
         

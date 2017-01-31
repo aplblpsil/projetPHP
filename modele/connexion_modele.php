@@ -13,13 +13,17 @@ if(isset($_REQUEST['ztLogin']) && isset($_REQUEST['ztPassword'])) {
     $rep = $bdd->query($lsQuery);
     $dataConnect = $rep->fetch();
     
-    $fonction = $dataConnect['idFonction'];
-    if($fonction == 1) { $fonction = 'admin'; }
-    if($fonction == 2) { $fonction = 'user'; }
-    if($fonction == 3) { $fonction = 'gestion'; }
-
     // Si c'est bien un utilisateur, il est connecté
     if($dataConnect) {
+        
+        $idUser = $dataConnect['id'];
+        $fonction = $dataConnect['idFonction'];
+        $loginUser = $dataConnect['mailLogin'];
+        
+        if($fonction == 1) { $fonction = 'Administrateur'; }
+        if($fonction == 2) { $fonction = 'Salarié'; }
+        if($fonction == 3) { $fonction = 'Gestionnaire'; }
+    
         header("location: ../control/index.php?pageType=accueil&access=$fonction");
     // Sinon message d'erreur   
     } else {
