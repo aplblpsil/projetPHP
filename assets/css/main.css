@@ -244,8 +244,26 @@ footer {
 /* - Liste des utilisateurs (listeUser_vue.php) - */
 /* ---------------------------------------------- */
 .user{
-    border: solid 3px dodgerblue;
+    border: solid 1px dodgerblue;
     border-bottom-right-radius: 40px;
-    background: linear-gradient(to top left, #F6F6F6, #F2F2F2, #FAFAFA);
-    padding: 10px;
+    background: linear-gradient(to top right, #FAFAFA, #CED8F6, #FAFAFA);
+    margin-bottom: 1%;
+    padding: 5px 0px 10px 10px;
+    display: flex;
+}
+
+.info {
+   width : 20%;
+   text-align : left;
+   display: inline-block;
+   margin: auto;
+}
+.user img {
+    max-width: 32px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.lien{
+    width: 5%;
 }

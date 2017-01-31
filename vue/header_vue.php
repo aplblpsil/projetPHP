@@ -9,19 +9,19 @@
             if(isset($_REQUEST['access'])) {
                 $fonction = $_REQUEST['access'];
                 $isAcces = false;
-                if($fonction == 'admin') {  $isAcces = true; /* menu de l'admin */ ?>
+                if($fonction == 'Administrateur') {  $isAcces = true; /* menu de l'admin */ ?>
             
                     <li><a href="index.php?pageType=accueil&access=<?php echo $fonction ?>">accueil</a></li>
                     <li><a href="index.php?pageType=inscription&access=<?php echo $fonction ?>">Inscription</a></li>
                     <li><a href="index.php?pageType=globalUser&access=<?php echo $fonction ?>">Liste utilisateurs</a></li>
                     <li><a href="index.php?pageType=deconnexion">d&eacute;connexion</a></li>
                     
-            <?php } if($fonction == 'user') { $isAcces = true; /* menu de l'user */ ?>
+            <?php } if($fonction == 'Salarié') { $isAcces = true; /* menu de l'user */ ?>
                     <li><a href="index.php?pageType=accueil">accueil</a></li>
-                    <li><a href="index.php?pageType=viewTicketU">mes tickets</a></li>
+                    <li><a href="index.php?pageType=viewTicketU&access=<?php echo $fonction ?>">mes tickets</a></li>
                     <li><a href="index.php?pageType=deconnexion">d&eacute;connexion</a></li>
                     
-            <?php } if($fonction == 'gestion') { $isAcces = true; /* menu du gestionnaire */ ?>
+            <?php } if($fonction == 'Gestionnaire') { $isAcces = true; /* menu du gestionnaire */ ?>
                     
                     <li><a href="index.php?pageType=accueil">accueil</a></li>
                     <li><a href="index.php?pageType=deconnexion">d&eacute;connexion</a></li>

@@ -9,8 +9,8 @@
         ?>
         <span id="erreurConnexion"> Login ou mot de passe incorrect </span>
         <?php
-            }
                 }
+            }
         ?>
         <br />
         <!-- informations de connexion -->
