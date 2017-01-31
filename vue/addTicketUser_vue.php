@@ -1,6 +1,6 @@
 <div>
     <h2 id='titleNewTicket'>Nouveau ticket</h2>
-    <form method='POST' action='../modele/addTicketU_modele.php'>
+    <form method='POST' action='../modele/addTicketUser_modele.php'>
     <div id='cadreNewTicket'>
         <div>
             <label for='ztTitre'>Titre:</label>
@@ -8,22 +8,22 @@
         </div>
         <div>
             <label for=''>Machine:</label>
-            <select>
-                <?php //mettre la liste des machines de la BDD ?>
+            <select name="ldrMachine">
+                <?php include("../modele/listeMachines_modele.php") ?>
             </select>
         </div>
         <div>
             <label for='ztDate'>Date:</label>
-            <input type='date' id='ztDate' name="ztDate" disabled="disabled" value="<?php // mettre la date du jour ?>"><br />
+            <input type='text' id='ztDate' name="ztDate" value="<?php echo date('d-m-Y') ?>"><br />
         </div>
         <div>
-            <label for='ztDescription'>Description de l'incident:</label><br />
+            <label id='labelDescription' for='ztDescription'>Description de l'incident:</label><br />
             <textarea rowspan='20' id='ztDescription' name='ztDescription'></textarea><br />
         </div>
         <div>
             <label for=''>Criticité du problème:</label>
-            <select>
-                <?php //mettre les type de criticité de la BDD ?>
+            <select name="ldrCriticite">
+                <?php include("../modele/listeCriticite_modele.php") ?>
             </select>
         </div>
         <div id='cadreValidNewTicket'>
@@ -31,6 +31,5 @@
             <input type='submit' class='btSubmit' value='Valider'>
         </div>
     </div>
-    
     </form>
 </div>

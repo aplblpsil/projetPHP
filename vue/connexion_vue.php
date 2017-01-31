@@ -5,7 +5,6 @@
         <?php
             if(isset($_REQUEST['access'])) {
                 if($_REQUEST['access'] == 'refuse') {
-            
         ?>
         <span id="erreurConnexion"> Login ou mot de passe incorrect </span>
         <?php

@@ -14,10 +14,10 @@
         }
         
         // le type d'accès
-        if(isset($_GET['access'])) {
+        if(isset($_GET['access']) && $_GET['access'] != 'refuse') {
             
-            $access = $_GET['access'];  
-            
+            $access = $_GET['access']; 
+                  
             if($access != 'Administrateur' && $access != 'Salarié' && $access != 'Gestionnaire') { 
                 
                 include('accueil_vue.php');

@@ -150,11 +150,11 @@ footer {
 #footer_left {
     color: grey;
     font-size: 11px;
-    margin-left: 10px;
+    margin: 5px 0 0 15px;
 }
 #footer_right  {
     float: right;
-    margin: 0 20px 10px 0 ;
+    margin-right: 20px; ;
 }
 #footer_right p {
     color: dodgerblue;
@@ -171,7 +171,7 @@ footer {
 /* -------------------------------------- */
 
 #formLogin {
-    margin-top: 200px;
+    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
@@ -187,6 +187,10 @@ footer {
     font-style: italic;
     text-shadow: 0 1px 1px lightgrey;
     opacity: 0.75;
+}
+#erreurConnexion {
+    color: red;
+    font-size: 12px;
 }
 #formLogin #ztLogin, #formLogin #ztPassword {
     margin: 5px;
@@ -205,7 +209,7 @@ footer {
 }
 
 /* -------------------------------------- */
-/* - Inscription_page (inscription_vue.php) - */
+/* - Inscription_page (addUser_vue.php) - */
 /* -------------------------------------- */
 #formInscription {
     margin-top: 15%;
@@ -227,7 +231,7 @@ footer {
     opacity: 0.75;
 }
 
-#ztMail, #formNom, #ztPrenom, #ztDateNaiss, #ztTel, #ztSalle, #ztFonction, #ztMachine {
+#ztMail, #ztNom, #ztPrenom, #ztDateNaiss, #ztTel, #ztFonction {
     margin: 5px;
     padding: 10px;
 }
@@ -266,4 +270,64 @@ footer {
 
 .lien{
     width: 5%;
+}
+/* ----------------------------------------- */
+/* - liste ticket (viewTicketUser_vue.php) - */
+/* ----------------------------------------- */
+#msgSucces {
+    color: green;
+    font-size: 12px;
+}
+#cadrelisteTicket > div {
+    background: linear-gradient(#F2F2F2, #E6E6E6);
+    margin: 25px 0;
+    padding: 10px;
+}
+#cadrelisteTicket div span span {
+    text-shadow: 0 1px 1px grey;
+}
+#cadrelisteTicket div div {
+    text-align: right;
+}
+#cadrelisteTicket img {
+    max-width: 50px;
+}
+#cadrelisteTicket textarea {
+    margin: 10px 0;
+    resize: none;
+    width: 500px;
+    height: 100px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* ------------------------------------------- */
+/* - création ticket (addTicketUser_vue.php) - */
+/* ------------------------------------------- */
+#titleNewTicket, #cadreNewTicket {
+    text-align: center;
+}
+#cadreNewTicket div {
+    margin: 5px;
+}
+#cadreNewTicket div label {
+    display: inline-block;
+    width: 150px;
+    text-align:left;
+}
+#cadreNewTicket div input, #cadreNewTicket div option {
+    padding: 5px;
+}
+#cadreNewTicket #labelDescription {
+    text-align: center;
+    width: 200px;
+}
+#cadreNewTicket #ztDescription {
+    resize: none;
+    width: 300px;
+    height: 150px;
+}
+#cadreValidNewTicket {
+    padding: 15px;
 }

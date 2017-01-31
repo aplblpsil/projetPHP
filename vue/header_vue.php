@@ -17,13 +17,13 @@
                     <li><a href="index.php?pageType=deconnexion">d&eacute;connexion</a></li>
                     
             <?php } if($fonction == 'Salarié') { $isAcces = true; /* menu de l'user */ ?>
-                    <li><a href="index.php?pageType=accueil">accueil</a></li>
+                    <li><a href="index.php?pageType=accueil&access=<?php echo $fonction ?>">accueil</a></li>
                     <li><a href="index.php?pageType=viewTicketU&access=<?php echo $fonction ?>">mes tickets</a></li>
                     <li><a href="index.php?pageType=deconnexion">d&eacute;connexion</a></li>
                     
             <?php } if($fonction == 'Gestionnaire') { $isAcces = true; /* menu du gestionnaire */ ?>
                     
-                    <li><a href="index.php?pageType=accueil">accueil</a></li>
+                    <li><a href="index.php?pageType=accueil&access=<?php echo $fonction ?>">accueil</a></li>
                     <li><a href="index.php?pageType=deconnexion">d&eacute;connexion</a></li>
                     
             <?php } if(!$isAcces) { /* acces non autorisé ou user non connecté */ ?>
