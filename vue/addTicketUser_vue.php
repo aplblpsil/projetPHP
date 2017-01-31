@@ -17,7 +17,7 @@
             <input type='date' id='ztDate' name="ztDate" disabled="disabled" value="<?php // mettre la date du jour ?>"><br />
         </div>
         <div>
-            <label for='ztDescription'>Description de l'incident:</label><br />
+            <label id='labelDescription' for='ztDescription'>Description de l'incident:</label><br />
             <textarea rowspan='20' id='ztDescription' name='ztDescription'></textarea><br />
         </div>
         <div>
@@ -31,6 +31,5 @@
             <input type='submit' class='btSubmit' value='Valider'>
         </div>
     </div>
-    
     </form>
 </div>

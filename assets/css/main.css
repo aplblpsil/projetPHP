@@ -139,7 +139,6 @@ footer {
     width: 100%;
     position: absolute;
     bottom: 0;
-    padding-top: 15px;
     border-top: solid 1px dodgerblue;
     background: linear-gradient(to top left, #F6F6F6, #F2F2F2, #FAFAFA);
     box-shadow: 0 -1px 3px 1px rgba(75, 75, 75, 0.3);
@@ -150,11 +149,11 @@ footer {
 #footer_left {
     color: grey;
     font-size: 11px;
-    margin-left: 10px;
+    margin: 5px 0 0 15px;
 }
 #footer_right  {
     float: right;
-    margin: 0 20px 10px 0 ;
+    margin-right: 20px; ;
 }
 #footer_right p {
     color: dodgerblue;
@@ -244,4 +243,29 @@ footer {
 /* - création ticket (addTicketUser_vue.php) - */
 /* ------------------------------------------- */
 
-
+#titleNewTicket, #cadreNewTicket {
+    text-align: center;
+}
+#cadreNewTicket div {
+    margin: 5px;
+}
+#cadreNewTicket div label {
+    display: inline-block;
+    width: 150px;
+    text-align:left;
+}
+#cadreNewTicket div input, #cadreNewTicket div option {
+    padding: 5px;
+}
+#cadreNewTicket #labelDescription {
+    text-align: center;
+    width: 200px;
+}
+#cadreNewTicket #ztDescription {
+    resize: none;
+    width: 300px;
+    height: 150px;
+}
+#cadreValidNewTicket {
+    padding: 15px;
+}
