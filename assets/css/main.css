@@ -137,8 +137,7 @@ header {
 
 footer {
     width: 100%;
-    position: absolute;
-    bottom: 0;
+    margin-bottom: 0px;
     padding-top: 15px;
     border-top: solid 1px dodgerblue;
     background: linear-gradient(to top left, #F6F6F6, #F2F2F2, #FAFAFA);
@@ -212,7 +211,7 @@ footer {
 /* - Inscription_page (addUser_vue.php) - */
 /* -------------------------------------- */
 #formInscription {
-    margin-top: 15%;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
