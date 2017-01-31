@@ -23,7 +23,7 @@
         <div>
             <label for=''>Criticité du problème:</label>
             <select>
-                <?php //mettre les type de criticité de la BDD ?>
+                <?php include("../modele/liste/criticite_modele.php") ?>
             </select>
         </div>
         <div id='cadreValidNewTicket'>
