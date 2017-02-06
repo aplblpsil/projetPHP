@@ -32,8 +32,9 @@
                         case 'delUser':               include('delUser_vue.php');                   break;
                         case 'addUser':               include('addUser_vue.php');                   break;                 
                         // gestion infrastructure
-                        case 'globalIncident':        include('g_incident_vue.php');                break;
-                        case 'globalInterventions':   include('g_interventions_vue.php');           break;
+                        case 'globalIncident':        include('listeIncident_vue.php');             break;
+                        case 'globalMachine':         include('listeMachine_vue.php');              break;
+                        case 'globalInterventions':   include('listeInterventions_vue.php');        break;
 
                         default:                      include('error404_vue.php');
                     }

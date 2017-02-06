@@ -24,13 +24,13 @@ foreach ($dataTicketUser as $unTicket) {
                       . "<span><span>Objet du problème:</span> $titre</span><br /> "
                       . "<span><span>Machine concerné:</span> $numMachine - $nomMachine</span> "
                       . "<span><span>Date de l'incident:</span> $dateTicket</span><br /> "
-                      . "<textarea>$description</textarea><br /> "
+                      . "<textarea disabled='disabled'>$description</textarea><br /> "
                       . "<span><span>Niveau du problème:</span> $criticite</span> "
                       . "<div>";
                     if($resolu == '1') {
-    $cadreTicket .= "<span><img src='../assets/img/img_404.png' alt=''></span><br /> Résolu ";
+    $cadreTicket .= "<span><img src='../assets/img/ok-button.png' alt='ticket_resolu'></span><br /> Résolu ";
                     } else {
-    $cadreTicket .= "<span><img src='../assets/img/logo.png' alt=''></span><br /> En cours de traitement";
+    $cadreTicket .= "<span><img src='../assets/img/warning-2.png' alt='ticket_en_cours'></span><br /> En cours de traitement";
                     }
     $cadreTicket .= "</div>"
                  . "</div>";

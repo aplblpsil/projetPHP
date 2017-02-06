@@ -13,7 +13,10 @@
        <?php include('../modele/listeTicketUser_modele.php') ?>
     </div>
     <div>
-        <a class='btAdd' href="index.php?pageType=addTicketU&access=Salarié">Créer un ticket d'incident</a>
+        <a class='btAdd' href="index.php?pageType=addTicketU&access=Salarié">
+            <img src="../assets/img/add-2.png" alt="btPlus">
+            <span>Créer un ticket d'incident</span>
+        </a>
     </div>
     
     
