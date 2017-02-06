@@ -12,5 +12,8 @@ $nom = $dataModifUser['nom'];
 $prenom = $dataModifUser['prenom'];
 $mail = $dataModifUser['mailLogin'];
 $tel = $dataModifUser['tel'];
-$dateNaiss = $dataModifUser['dateNaiss'];
+$dateN = $dataModifUser['dateNaiss'];
+$dateConvertion = new DateTime($dateN);
+$dateNaiss = $dateConvertion->format('d/m/Y');
+
 $fonction = $dataModifUser['idFonction'];
