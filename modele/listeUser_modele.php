@@ -1,13 +1,13 @@
 <?php 
 include ('bdd_connect.php');
-$sql = "SELECT nom, prenom, mailLogin, tel, dateNaiss, description FROM Utilisateur "
-        . "INNER JOIN Fonction ON Utilisateur.idFonction = Fonction.id ORDER BY Fonction.description;";
+$sql = "SELECT nom, prenom, mailLogin, tel, dateNaiss, description FROM utilisateur "
+     . "INNER JOIN fonction ON utilisateur.idFonction = fonction.id ORDER BY fonction.description;";
 $bdd->query("SET NAMES UTF8");
 $res = $bdd->query($sql);
 $dataUsers = $res->fetchAll();
 $cadreUser = "";
 
-foreach  ($bdd->query($sql) as $row) {
+foreach($dataUsers as $row) {
     $nom = $row['nom'];
     $prenom = $row['prenom'];
     $mail = $row['mailLogin'];
