@@ -26,7 +26,7 @@ foreach  ($dataUsers as $row) {
                         . "<img src='../assets/img/edit.png' alt='editer utilisateur'/>"
                     . "</a></span>"
                     . "<span class='lien'><a href='index.php?access=Administrateur'>"
-                        . "<img src='../assets/img/trash.png' alt='editer utilisateur'/>"
+                        . "<img src='../assets/img/trash.png' alt='supprimer utilisateur'/>"
                     . "</a></span>"
                 
                

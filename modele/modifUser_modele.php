@@ -15,5 +15,5 @@ $tel = $dataModifUser['tel'];
 $dateN = $dataModifUser['dateNaiss'];
 $dateConvertion = new DateTime($dateN);
 $dateNaiss = $dateConvertion->format('d/m/Y');
-
 $fonction = $dataModifUser['idFonction'];
+
