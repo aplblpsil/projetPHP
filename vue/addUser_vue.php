@@ -8,9 +8,9 @@
         <input type="date" id="ztDateNaiss" name="ztDateNaiss" placeholder="date de naissance..."><br /><br />
         <input type="text" id="ztTel" name="ztTel" placeholder="tel..."><br /><br />
         <select id="ztFonction" name="ztFonction">
-            <option value="1">Admin</option>
+            <option value="1">Administrateur</option>
             <option value="2">Salarié</option>
-            <option value="3">Utilisateur</option>            
+            <option value="3">Gestionnaire</option> 
         </select><br /><br />
         <!-- effacer/valider les champs -->
         <input type="reset" value="effacer" class="btReset">

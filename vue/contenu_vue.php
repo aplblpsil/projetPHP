@@ -55,7 +55,7 @@
                         case 'deconnexion':           include('../modele/deconnexion_modele.php');  break;
                         case 'globalIncident':        include('g_incident_vue.php');                break;
                         case 'globalInterventions':   include('g_interventions_vue.php');           break;
-
+                        
 
                         default:                      include('error404_vue.php');
                     }
