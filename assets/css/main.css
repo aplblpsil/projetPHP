@@ -137,8 +137,8 @@ header {
 
 footer {
     width: 100%;
-    position: absolute;
-    bottom: 0;
+    margin-bottom: 0px;
+    padding-top: 15px;
     border-top: solid 1px dodgerblue;
     background: linear-gradient(to top left, #F6F6F6, #F2F2F2, #FAFAFA);
     box-shadow: 0 -1px 3px 1px rgba(75, 75, 75, 0.3);
@@ -211,7 +211,7 @@ footer {
 /* - Inscription_page (addUser_vue.php) - */
 /* -------------------------------------- */
 #formInscription {
-    margin-top: 15%;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
@@ -243,6 +243,33 @@ footer {
     background: #ACFA58;
 }
 
+/* ---------------------------------------------- */
+/* - Liste des utilisateurs (listeUser_vue.php) - */
+/* ---------------------------------------------- */
+.user{
+    border: solid 1px dodgerblue;
+    border-bottom-right-radius: 40px;
+    background: linear-gradient(to top right, #FAFAFA, #CED8F6, #FAFAFA);
+    margin-bottom: 1%;
+    padding: 5px 0px 10px 10px;
+    display: flex;
+}
+
+.info {
+   width : 20%;
+   text-align : left;
+   display: inline-block;
+   margin: auto;
+}
+.user img {
+    max-width: 32px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.lien{
+    width: 5%;
+}
 /* ----------------------------------------- */
 /* - liste ticket (viewTicketUser_vue.php) - */
 /* ----------------------------------------- */
