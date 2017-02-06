@@ -57,6 +57,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 /* -------------------------------------- */
@@ -127,8 +128,8 @@ header {
 /* -------------------------- */
 
 #container {
-    padding: 5px;
-    margin: 5px;
+    width: 100%;
+    height:100%; 
 }
 
 /* ---------------------------- */
@@ -137,9 +138,9 @@ header {
 
 footer {
     width: 100%;
-    margin-bottom: 0px;
+    position: relative;
     bottom: 0;
-    position: absolute;
+    padding:0 0 5px 0;
     border-top: solid 1px dodgerblue;
     background: linear-gradient(to top left, #F6F6F6, #F2F2F2, #FAFAFA);
     box-shadow: 0 -1px 3px 1px rgba(75, 75, 75, 0.3);
@@ -154,7 +155,7 @@ footer {
 }
 #footer_right  {
     float: right;
-    margin-right: 20px; ;
+    padding: 0px 20px 0 0;
 }
 #footer_right p {
     color: dodgerblue;
@@ -177,6 +178,7 @@ footer {
     padding: 10px;
     border: 1px solid lightgrey;
     border-radius: 3px;
+    width: 100%;
     text-align: center;
     width: 300px;
     background: rgba(245, 245, 245, 0.8);
