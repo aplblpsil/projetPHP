@@ -27,13 +27,12 @@
                     switch ($laPage) {
                         case 'deconnexion':           include('../modele/deconnexion_modele.php');  break;
                         // gestion user
-                        case 'globalUser':            include('listeUser_vue.php');               break;
-                        case 'modifUser':             include('modifUser_vue.php');               break;
-                        case 'delUser':               include('delUser_vue.php');               break;
-                        case 'addUser':               include('addUser_vue.php');               break;                 
+                        case 'globalUser':            include('listeUser_vue.php');                 break;
+                        case 'modifUser':             include('modifUser_vue.php');                 break;
+                        case 'delUser':               include('delUser_vue.php');                   break;
+                        case 'addUser':               include('addUser_vue.php');                   break;                 
                         // gestion infrastructure
                         case 'globalIncident':        include('g_incident_vue.php');                break;
-
                         case 'globalInterventions':   include('g_interventions_vue.php');           break;
 
                         default:                      include('error404_vue.php');
@@ -55,7 +54,7 @@
                         case 'deconnexion':           include('../modele/deconnexion_modele.php');  break;
                         case 'globalIncident':        include('g_incident_vue.php');                break;
                         case 'globalInterventions':   include('g_interventions_vue.php');           break;
-
+                        
 
                         default:                      include('error404_vue.php');
                     }
