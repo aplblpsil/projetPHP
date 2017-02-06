@@ -24,6 +24,8 @@
                     
                     <li><a href="index.php?pageType=accueil&access=<?php echo $fonction ?>">accueil</a></li>
                     <li><a href="index.php?pageType=deconnexion">d&eacute;connexion</a></li>
+                    <li><a href="index.php?pageType=globalIncident">incidents</a></li>
+                    <li><a href="index.php?pageType=globalInterventions">interventions</a></li>
                     
             <?php } if(!$isAcces) { /* acces non autorisé ou user non connecté */ ?>
                     
