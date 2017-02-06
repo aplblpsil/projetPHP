@@ -23,12 +23,11 @@ foreach  ($dataUsers as $row) {
                     . "<span class='info'>$tel</span>"
                     . "<span class='info'>$fonction</span>"
                     . "<span class='lien'><a href='index.php?pageType=modifUser&access=Administrateur&idUser=".$id."'>"
-                        . "<img src='../assets/img/edit.png' alt='editer utilisateur'/>"
+                        . "<img src='../assets/img/edit.png' alt='editer_utilisateur'/>"
                     . "</a></span>"
                     . "<span class='lien'><a href='index.php?access=Administrateur'>"
-                        . "<img src='../assets/img/trash.png' alt='editer utilisateur'/>"
-                    . "</a></span>"
-                
+                        . "<img src='../assets/img/trash.png' alt='supprimer_utilisateur'/>"
+                    . "</a></span>"           
                
             . "</div>";
     echo $cadreUser;
