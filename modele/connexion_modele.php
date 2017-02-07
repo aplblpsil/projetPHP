@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 include_once('bdd_connect.php');
 
 // Si les champs != vide, on va verifier ses champs
@@ -20,11 +21,15 @@ if(isset($_REQUEST['ztLogin']) && isset($_REQUEST['ztPassword'])) {
         $fonction = $dataConnect['idFonction'];
         $loginUser = $dataConnect['mailLogin'];
         
-        if($fonction == 1) { $fonction = 'Administrateur'; }
-        if($fonction == 2) { $fonction = 'Salarié'; }
-        if($fonction == 3) { $fonction = 'Gestionnaire'; }
+        // on récupera ses valeurs depuis n'importe quelle page
+        $_SESSION['idU'] = $idUser;
+        $_SESSION['fonctionU'] = $fonction;
+        
+        if($fonction == 1) { $_SESSION['fonctionU'] = 'Administrateur'; }
+        if($fonction == 2) { $_SESSION['fonctionU'] = 'Salarié'; }
+        if($fonction == 3) { $_SESSION['fonctionU'] = 'Gestionnaire'; }
     
-        header("location: ../control/index.php?pageType=accueil&access=$fonction");
+        header("location: ../control/index.php?pageType=accueil");
     // Sinon message d'erreur   
     } else {
         header("location: ../control/index.php?pageType=connexion&access=refuse");  
