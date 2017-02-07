@@ -1,6 +1,7 @@
 <div>
     <h3>Mes tickets d'incident</h3>
      <?php
+     echo $_SESSION['fonctionU'];
             if(isset($_REQUEST['ac'])) {
                 if($_REQUEST['ac'] == 'added') {
         ?>
@@ -18,6 +19,4 @@
             <span>Créer un ticket d'incident</span>
         </a>
     </div>
-    
-    
 </div>
