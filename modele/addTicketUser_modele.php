@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include_once ("bdd_connect.php");
 
 // on récupère les champs que l'user aura rempli
@@ -8,7 +8,7 @@ $date = $_REQUEST['ztDate'];
 $description = $_REQUEST['ztDescription'];
 $machine = $_REQUEST['ldrMachine'];
 $criticite = $_REQUEST['ldrCriticite'];
-//$idU = $_SESSION['idUser'];
+$idUser = $_SESSION['idU'];
 
 //convertion de la date en format EN:
 $dateConvertion = new DateTime($date);
@@ -22,7 +22,8 @@ $dateTicket = $dateConvertion->format('Y-m-d');
     // Inscription
     $sql = "INSERT INTO incident(titre,resolu,dateSignalisation,description,idCriticite,idMachine,idUser) "
             . "VALUES ('".$titre."',0, '".$dateTicket."','".$description."',".$criticite.",".$machine.""
-            . ",2);";
+            . ",$idUser);";
+    $bdd->query("SET NAMES UTF8");
     $bdd->query($sql);
     
     header("location: ../control/index.php?pageType=viewTicketU&access=Salarié&ac=added");
