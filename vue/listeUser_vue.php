@@ -2,4 +2,3 @@
 <div id="listUser">
     <?php include("../modele/listeUser_modele.php"); ?>
 </div>
-

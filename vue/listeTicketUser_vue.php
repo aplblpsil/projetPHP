@@ -4,8 +4,8 @@
         if(isset($_REQUEST['ac'])) {
             if($_REQUEST['ac'] == 'added') {
     ?>
-    <div>    
-        <span id="msgSucces"> Votre ticket d'incident a bien été enregistré </span>
+    <div class="msgSucces">    
+        <span> Votre ticket d'incident a bien été enregistré </span>
     </div>
     <?php
             }

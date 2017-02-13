@@ -280,6 +280,7 @@ footer {
 /* - liste ticket (viewTicketUser_vue.php) - */
 /* ----------------------------------------- */
 #msgSucces {
+    text-align: center;
     color: green;
     font-size: 12px;
 }
