@@ -1,5 +1,5 @@
 <div>
-    <h3>Mes tickets d'incident</h3>
+    <h3><center>Mes tickets d'incident</center></h3>
     <?php
         if(isset($_REQUEST['ac'])) {
             if($_REQUEST['ac'] == 'added') {
@@ -14,7 +14,7 @@
     <div id='cadrelisteTicket'>
         <?php include('../modele/listeTicketUser_modele.php') ?>
     </div>
-    <div>
+    <div class="cadreAdd">
         <a class='btAdd' href="index.php?pageType=addTicketU">
             <img src="../assets/img/add-2.png" alt="btPlus">
             <span>Créer un ticket d'incident</span>

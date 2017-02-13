@@ -1,6 +1,6 @@
 <?php
 include('bdd_connect.php');
-//$idUser = $_SESSION['idUser'];
+$idUser = $_GET['idUser'];
 $mail = $_POST['ztMail'];
 $nom = $_POST['ztNom'];
 $prenom = $_POST['ztPrenom'];

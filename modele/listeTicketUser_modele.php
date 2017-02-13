@@ -21,8 +21,8 @@ foreach ($dataTicketUser as $unTicket) {
     $nomMachine = $unTicket['nomMachine'];
     
     $cadreTicket = "<div>"
-                      . "<span><span>Objet du problème:</span> $titre</span><br /> "
-                      . "<span><span>Machine concerné:</span> $numMachine - $nomMachine</span> "
+                      . "<span><span>Objet du problème:</span> $titre</span><br /><br />"
+                      . "<span><span>Machine concerné:</span> $numMachine - $nomMachine</span><br /> "
                       . "<span><span>Date de l'incident:</span> $dateTicket</span><br /> "
                       . "<textarea disabled='disabled'>$description</textarea><br /> "
                       . "<span><span>Niveau du problème:</span> $criticite</span> "
