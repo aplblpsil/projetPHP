@@ -1,20 +1,23 @@
 <div>
     <h3>Mes tickets d'incident</h3>
-     <?php
-            if(isset($_REQUEST['ac'])) {
-                if($_REQUEST['ac'] == 'added') {
-        ?>
+    <?php
+        if(isset($_REQUEST['ac'])) {
+            if($_REQUEST['ac'] == 'added') {
+    ?>
+    <div>    
         <span id="msgSucces"> Votre ticket d'incident a bien été enregistré </span>
-        <?php
-                }
+    </div>
+    <?php
             }
-        ?>
+        }
+    ?>
     <div id='cadrelisteTicket'>
-       <?php include('../modele/listeTicketUser_modele.php') ?>
+        <?php include('../modele/listeTicketUser_modele.php') ?>
     </div>
     <div>
-        <a class='btAdd' href="index.php?pageType=addTicketU&access=Salarié">Créer un ticket d'incident</a>
+        <a class='btAdd' href="index.php?pageType=addTicketU">
+            <img src="../assets/img/add-2.png" alt="btPlus">
+            <span>Créer un ticket d'incident</span>
+        </a>
     </div>
-    
-    
 </div>

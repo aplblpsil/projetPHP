@@ -14,6 +14,7 @@ try {
 } catch (Exception $e) {
     die('Erreur : l application n a pas pu se connecter a la BDD' . $e->getMessage());
 }
+
 return $bdd;
 
 ?>
