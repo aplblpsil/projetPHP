@@ -1,12 +1,13 @@
 <?php
-
 include_once('bdd_connect.php');
+
+$idUser = $_SESSION['idU'];
 
 $lsQuery = "SELECT i.*, c.nom AS nomCriticite, m.nom AS nomMachine, m.numSerie FROM incident i "
          . "INNER JOIN criticite c ON i.idCriticite = c.id "
          . "INNER JOIN machine m ON i.idMachine = m.id "
-         . "WHERE i.idUser = 2 "
-         . "ORDER BY i.dateSignalisation, i.resolu ;"; // <- recuperer l'id de l'user connecté
+         . "WHERE i.idUser = $idUser "
+         . "ORDER BY i.dateSignalisation, i.resolu ;";
 $bdd->query("SET NAMES UTF8");
 $rep = $bdd->query($lsQuery);
 $dataTicketUser = $rep->fetchAll();

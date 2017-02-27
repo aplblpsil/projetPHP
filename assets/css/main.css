@@ -277,7 +277,7 @@ footer {
    margin: auto;
 }
 .user img {
-    max-width: 32px;
+    max-width: 30px;
     margin-right: 5px;
     display: inline-block;
 }
@@ -351,4 +351,44 @@ footer {
 }
 #cadreValidNewTicket {
     padding: 15px;
+}
+
+/* ------------------------------------------------- */
+/* - liste intervention (ListTntervention_vue.php) - */
+/* ------------------------------------------------- */
+.intervention{
+    border: solid 1px dodgerblue;
+    border-bottom-right-radius: 40px;
+    background: linear-gradient(to top right, #FAFAFA, #CED8F6, #FAFAFA);
+    margin-bottom: 1%;
+    padding: 5px 0px 10px 10px;
+    display: flex;
+}
+.infoIntervention {
+   width : 20%;
+   text-align : left;
+   display: inline-block;
+   margin: auto;
+}
+
+/* ------------------------------------------------- */
+/* - liste machines (listeMachine_vue.php) - */
+/* ------------------------------------------------- */
+
+#listeMachines .uneMachine {
+    border: solid 1px dodgerblue;
+    border-bottom-right-radius: 40px;
+    background: linear-gradient(to top right, #FAFAFA, #CED8F6, #FAFAFA);
+    margin-bottom: 1%;
+    padding: 5px 0px 10px 10px;
+    display: flex;
+}
+#listeMachines .uneMachine span{
+   width : 20%;
+   text-align : left;
+   display: inline-block;
+   margin: auto;
+}
+#listeMachines .uneMachine span img{
+   max-width: 30px;
 }

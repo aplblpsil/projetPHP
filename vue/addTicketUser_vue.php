@@ -9,7 +9,7 @@
         <div>
             <label for=''>Machine:</label>
             <select name="ldrMachine">
-                <?php include("../modele/listeMachines_modele.php") ?>
+                <?php include("../modele/listeNomMachines_modele.php") ?>
             </select>
         </div>
         <div>
