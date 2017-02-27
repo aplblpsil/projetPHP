@@ -22,7 +22,7 @@
             <?php } if($fonction == 'Gestionnaire') { /* menu du gestionnaire */ ?>           
                     <li><a href="index.php?pageType=accueil">accueil</a></li>
                     <li><a href="index.php?pageType=addIntervention">création des interventions</a></li>
-                    <li><a href="index.php?pageType=listIntervention">liste des interventions</a></li>
+                    <li><a href="index.php?pageType=globalInterventions">liste des interventions</a></li>
                     <li><a href="index.php?pageType=deconnexion">d&eacute;connexion</a></li>
                     
             <?php } 
