@@ -26,7 +26,7 @@ if(isset($_GET['pageType'])) {
                     // gestion infrastructure
                     case 'globalIncident':        include('listeIncident_vue.php');             break;
                     case 'globalMachine':         include('listeMachine_vue.php');              break;
-                    case 'globalInterventions':   include('listeInterventions_vue.php');        break;
+                    case 'globalInterventions':   include('ListIntervention_vue.php');        break;
 
                     default:                      include('error404_vue.php');
                 }
