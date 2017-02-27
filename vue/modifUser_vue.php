@@ -1,9 +1,11 @@
 <h3>Modifier l'utilisateur</h3>
 <?php include("../modele/modifUser_modele.php"); ?>
+
 <form  method="POST" action="../modele/insertModifUser_modele.php">
     <fieldset  id="formModifUser">
         <legend>Profil</legend>
         <!-- informations sur l'utilisateur -->
+        <input type="text" name="idUser" value="<?php echo $idU; ?>" hidden="hidden"/>
         <label for="ztMail">Mail :</label><br />
         <input type="text" id="ztMail" name="ztMail" value="<?php echo $mail?>"><br /><br />
         <label for="ztNom">Nom :</label><br />

@@ -49,6 +49,16 @@
     background: #58ACFA;
 }
 
+.msgSucces {
+    color: green;
+    font-size: 12px;
+}
+
+.msgError {
+    color: red;
+    font-size: 12px;
+}
+
 /* -------------------- */
 /* - Body_page (index.php) - */
 /* -------------------- */

@@ -1,6 +1,6 @@
 <?php
 include('bdd_connect.php');
-$idUser = $_GET['idUser'];
+$idUser = $_POST['idUser'];
 $mail = $_POST['ztMail'];
 $nom = $_POST['ztNom'];
 $prenom = $_POST['ztPrenom'];
@@ -11,19 +11,11 @@ $dateN = $dateConverted->format('Y-m-d');
 $tel = $_POST['ztTel'];
 $fonction = $_POST['ztFonction'];
 
-//switch ($fonction) {
-//    case "Administrateur":
-//        $fonction = 1;
-//        break;
-//    case "Salarié" :
-//        $fonction = 2;
-//        break;
-//    case "Gestionnaire" :
-//        $fonction = 3;
-//        break; 
-//}
-$sql = "UPDATE Utilisateur SET mailLogin='".$mail."', nom='".$nom."', prenom='".$prenom."', date='".$dateN."', idFonction='".$fonction."'"
-     . "WHERE id='".$idUser."';";
+$sql = "UPDATE utilisateur SET mailLogin='".$mail."', nom='".$nom."', prenom='".$prenom."', dateNaiss='".$dateN."', tel='".$tel."', idFonction=".$fonction.""
+     . " WHERE id=".$idUser.";";
+
 $bdd->exec($sql);
+
+header('Location: ../control/index.php?pageType=globalUser&edited=true');
 
 

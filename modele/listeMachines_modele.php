@@ -10,7 +10,8 @@ foreach ($dataMachine as $uneMachine) {
     $idMachine = $uneMachine['id'];
     $numMachine = $uneMachine['numSerie'];
     $nomMachine = $uneMachine['nom'];
-    $ldrMachine = "<option value='$idMachine'>$numMachine - $nomMachine</option>";
+    $fabMachine = $uneMachine['fabriquant'];
+    $ldrMachine = "<span value='$idMachine'>$fabMachine - $numMachine - $nomMachine</span><br />";
     
     echo "$ldrMachine";
 }

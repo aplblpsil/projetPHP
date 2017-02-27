@@ -21,7 +21,7 @@ if(isset($_GET['pageType'])) {
                     // gestion user
                     case 'globalUser':            include('listeUser_vue.php');                 break;
                     case 'modifUser':             include('modifUser_vue.php');                 break;
-                    case 'delUser':               include('delUser_vue.php');                   break;
+                    case 'delUser':               include('../modele/delUser_modele.php');      break;
                     case 'addUser':               include('addUser_vue.php');                   break;                 
                     // gestion infrastructure
                     case 'globalIncident':        include('listeIncident_vue.php');             break;
