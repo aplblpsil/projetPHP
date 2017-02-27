@@ -9,6 +9,6 @@ $stmt->bindValue('id', $id, PDO::PARAM_INT);
 print_r($stmt);
 $stmt->execute();
 
-//header('Location: ../control/index.php?pageType=globalUser&deleted=true');
+header('Location: ../control/index.php?pageType=globalUser&deleted=true');
 
 ?>

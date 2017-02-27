@@ -2,19 +2,20 @@
 include_once('bdd_connect.php');
 
 $id = $_SESSION['idU'];
+
 $stmt = $bdd->prepare("SELECT i.*, c.nom AS nomCriticite, m.nom AS nomMachine, m.numSerie, priorite.nom AS nomPriorite FROM incident i "
          . "INNER JOIN criticite c ON i.idCriticite = c.id "
          . "INNER JOIN machine m ON i.idMachine = m.id "
          . "INNER JOIN intervention ON i.id = intervention.idIncident "
          . "INNER JOIN priorite ON intervention.idPriorite = priorite.id "
-         . "WHERE i.idUser= :id AND etat='En cours' "
+         . "WHERE intervention.idUser=:id AND etat='En cours' "
          . "ORDER BY i.dateSignalisation ASC, idPriorite DESC ;"); 
 $bdd->query("SET NAMES UTF8");
 $stmt->bindValue('id', $id, PDO::PARAM_INT);
 $stmt->execute();
+$dataTicket = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-$dataTicket = $stmt->fetchAll();
-
+//print_r($dataTicket);
 foreach ($dataTicket as $unTicket) {
     $titre = $unTicket['titre'];
     $resolu = $unTicket['resolu'];
