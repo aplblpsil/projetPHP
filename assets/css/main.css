@@ -48,6 +48,16 @@
     background: #58ACFA;
 }
 
+.msgSucces {
+    color: green;
+    font-size: 12px;
+}
+
+.msgError {
+    color: red;
+    font-size: 12px;
+}
+
 /* -------------------- */
 /* - Body_page (index.php) - */
 /* -------------------- */
@@ -278,10 +288,7 @@ footer {
 /* ----------------------------------------- */
 /* - liste ticket (viewTicketUser_vue.php) - */
 /* ----------------------------------------- */
-#msgSucces {
-    color: green;
-    font-size: 12px;
-}
+
 #cadrelisteTicket {
     text-align: center;
     display: inline-block;
