@@ -36,7 +36,7 @@ if(isset($_GET['pageType'])) {
                 switch ($laPage) {
                     case 'deconnexion':           include('../modele/deconnexion_modele.php');  break;
                     case 'accueil':               include('accueil_vue.php');                   break;
-                    case 'viewTicketU':           include('viewTicketUser_vue.php');            break;
+                    case 'globalTicketU':           include('listeTicketUser_vue.php');            break;
                     case 'addTicketU' :           include('addTicketUser_vue.php');             break;
 
                     default:                      include('error404_vue.php');
