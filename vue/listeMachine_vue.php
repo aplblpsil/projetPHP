@@ -1,4 +1,4 @@
 <h3>Liste des machines</h3>
-<div id="listUser">
+<div id="listeMachines">
     <?php include("../modele/listemachines_modele.php"); ?>
 </div>
