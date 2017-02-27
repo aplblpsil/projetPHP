@@ -14,6 +14,7 @@
                         <li><a href="index.php?pageType=addUser">Inscription</a></li>
                         <li><a href="index.php?pageType=globalUser">Liste utilisateurs</a></li>
                         <li><a href="index.php?pageType=globalMachine">Liste machines</a></li>
+                        <li><a href="index.php?pageType=globalInterventions">Intervenir</a></li>
                         <li><a href="index.php?pageType=deconnexion">d&eacute;connexion</a></li>
 
                 <?php } if($fonction == 'Salarié') { /* menu de l'user */ ?>
