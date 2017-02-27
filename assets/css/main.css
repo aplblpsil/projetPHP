@@ -342,3 +342,23 @@ footer {
 #cadreValidNewTicket {
     padding: 15px;
 }
+
+/* ------------------------------------------------- */
+/* - liste intervention (ListTntervention_vue.php) - */
+/* ------------------------------------------------- */
+.intervention{
+    border: solid 1px dodgerblue;
+    border-bottom-right-radius: 40px;
+    background: linear-gradient(to top right, #FAFAFA, #CED8F6, #FAFAFA);
+    margin-bottom: 1%;
+    padding: 5px 0px 10px 10px;
+    display: flex;
+}
+
+
+.infoIntervention {
+   width : 20%;
+   text-align : left;
+   display: inline-block;
+   margin: auto;
+}
