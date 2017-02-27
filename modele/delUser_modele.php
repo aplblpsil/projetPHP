@@ -1,10 +1,13 @@
 <?php
-include ('bdd_connect.php');
+include 'bdd_connect.php';
+if(isset($_GET['idUser'])){
+    $id=$_GET['idUser'];
+}
 
-$sql = "DELETE FROM utilisateur WHERE id=".$_GET['idUser'].";";
-$bdd->exec($sql);
-
-echo $sql;
+$stmt = $bdd->prepare("UPDATE Utilisateur SET etat=0 WHERE id= :id;");
+$stmt->bindValue('id', $id, PDO::PARAM_INT);
+print_r($stmt);
+$stmt->execute();
 
 header('Location: ../control/index.php?pageType=globalUser&deleted=true');
 

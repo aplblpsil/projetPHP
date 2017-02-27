@@ -289,11 +289,7 @@ footer {
 /* ----------------------------------------- */
 /* - liste ticket (viewTicketUser_vue.php) - */
 /* ----------------------------------------- */
-#msgSucces {
-    text-align: center;
-    color: green;
-    font-size: 12px;
-}
+
 #cadrelisteTicket {
     display: inline-block;
     margin-left: 25%;
@@ -388,7 +384,6 @@ footer {
     display: flex;
 }
 #listeMachines .uneMachine span{
-   width : 20%;
    text-align : left;
    display: inline-block;
    margin: auto;
