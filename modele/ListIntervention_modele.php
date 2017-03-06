@@ -26,7 +26,7 @@ $cadreInterv ="";
 
 foreach ($dataIntervention as $uneIntervention) {
     
-    $id = $uneIntervention['id'];
+    $idIntervention = $uneIntervention['id'];
     $priorite = $uneIntervention['nomP'];
     $dateInt = $uneIntervention['dateInt'];
     $dateFin = $uneIntervention['dateFin'];
@@ -50,8 +50,8 @@ foreach ($dataIntervention as $uneIntervention) {
     $cadreInterv .= "<span><img src='../assets/img/warning-2' alt=''></span><br /> En cours de traitement<br /><br /><br />";
                     }
                     
-    $cadreInterv .= "<span class='lien'><a href='index.php?pageType=delIntervention&idUser=".$id."'>"
-                        . "<img src='../assets/img/trash.png' alt='supprimer_intervention' onclick='return confirm('Etes-vous sûr de vouloir supprimer cette intervention?');'/>"
+    $cadreInterv .= "<span class='lien'><a href='index.php?pageType=delIntervention&idIntervention=".$idIntervention."'>"
+                        . "<img src='../assets/img/trash.png' alt='supprimer_intervention'/>"
                         . "</a></span>";   
                     
     $cadreInterv .= "</div>";
