@@ -16,6 +16,7 @@ $bdd->query("SET NAMES UTF8");
 
 $stmt->bindValue('id', $id, PDO::PARAM_INT);
 $stmt->execute();
+$dataTicket = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 $dataTicket = $stmt->fetchAll(PDO::FETCH_ASSOC);
 

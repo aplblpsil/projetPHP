@@ -48,15 +48,35 @@
 .btSubmit:hover {
     background: #58ACFA;
 }
-
 .msgSucces {
     color: green;
     font-size: 12px;
 }
-
 .msgError {
     color: red;
     font-size: 12px;
+}
+.cadreListe {
+    border: solid 1px dodgerblue;
+    border-bottom-right-radius: 40px;
+    background: linear-gradient(to top right, #FAFAFA, #CED8F6, #FAFAFA);
+    margin-bottom: 1%;
+    padding: 5px 0px 10px 10px;
+    display: flex;
+}
+.lien img {
+    max-width: 30px;
+    margin-right: 5px;
+    display: inline-block;
+}
+.info {
+   width : 20%;
+   text-align : left;
+   display: inline-block;
+   margin: auto;
+}
+.lien {
+    width: 5%;
 }
 
 /* -------------------- */
@@ -261,30 +281,7 @@ footer {
 /* ---------------------------------------------- */
 /* - Liste des utilisateurs (listeUser_vue.php) - */
 /* ---------------------------------------------- */
-.user{
-    border: solid 1px dodgerblue;
-    border-bottom-right-radius: 40px;
-    background: linear-gradient(to top right, #FAFAFA, #CED8F6, #FAFAFA);
-    margin-bottom: 1%;
-    padding: 5px 0px 10px 10px;
-    display: flex;
-}
 
-.info {
-   width : 20%;
-   text-align : left;
-   display: inline-block;
-   margin: auto;
-}
-.user img {
-    max-width: 30px;
-    margin-right: 5px;
-    display: inline-block;
-}
-
-.lien{
-    width: 5%;
-}
 
 /* ----------------------------------------- */
 /* - liste ticket (viewTicketUser_vue.php) - */
@@ -375,19 +372,3 @@ footer {
 /* - liste machines (listeMachine_vue.php) - */
 /* ------------------------------------------------- */
 
-#listeMachines .uneMachine {
-    border: solid 1px dodgerblue;
-    border-bottom-right-radius: 40px;
-    background: linear-gradient(to top right, #FAFAFA, #CED8F6, #FAFAFA);
-    margin-bottom: 1%;
-    padding: 5px 0px 10px 10px;
-    display: flex;
-}
-#listeMachines .uneMachine span{
-   text-align : left;
-   display: inline-block;
-   margin: auto;
-}
-#listeMachines .uneMachine span img{
-   max-width: 30px;
-}

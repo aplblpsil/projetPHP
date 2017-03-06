@@ -3,13 +3,13 @@
     <form method='POST' action='../modele/addTicketUser_modele.php'>
     <div id='cadreNewTicket'>
         <div>
-            <label for='ztTitre'>Titre:</label>
+            <label for='ztTitreIncident'>Titre:</label>
             <input type='text' id='ztTitreIncident' name='ztTitre'><br />
         </div>
         <div>
-            <label for=''>Machine:</label>
+            <label>Machine:</label>
             <select name="ldrMachine">
-                <?php include("../modele/listeNomMachines_modele.php") ?>
+                <?php include("../modele/machines_modele.php") ?>
             </select>
         </div>
         <div>
@@ -21,7 +21,7 @@
             <textarea rowspan='20' id='ztDescription' name='ztDescription'></textarea><br />
         </div>
         <div>
-            <label for=''>Criticité du problème:</label>
+            <label>Criticité du problème:</label>
             <select name="ldrCriticite">
                 <?php include("../modele/listeCriticite_modele.php") ?>
             </select>

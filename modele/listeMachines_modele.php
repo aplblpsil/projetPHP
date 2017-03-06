@@ -15,18 +15,21 @@ foreach ($dataMachine as $uneMachine) {
     $formatMachine = $uneMachine['format'];
     $nomUser = $uneMachine['nomUser'];
     $prenomUser = $uneMachine['prenomUser'];
-    $listeMachine = "<div class='uneMachine'>"
-                        . "<span>".$formatMachine."</span> "
-                        . "<span>$numMachine</span> "
-                        . "<span>$nomMachine</span> "
-                        . "<span>$nomUser - $prenomUser</span>"
-                        . "<span><a href='index.php?pageType=modifMachine&idM=".$idMachine."'>"
+    $listeMachine = "<div class='cadreListe'>"
+                        . "<span class='info'><b>Type du terminal</b> ".$formatMachine."</span> "
+                        . "<span class='info'><b>Numéro machine</b> ".$numMachine."</span> "
+                        . "<span class='info'><b>Nom machine</b> ".$nomMachine."</span> "
+                        . "<span class='info'><b>Utilisé par</b> ".$nomUser ."-". $prenomUser."</span> "
+                        . "<span class='lien'>"
+                            . "<a href='index.php?pageType=modifMachine&idM=".$idMachine."'>"
                             . "<img src='../assets/img/edit.png' alt='editer_machine'/>"
-                        . "</a></span>"
-                        . "<span class='lien'><a href='index.php?pageType=delMachine&idM=$idMachine'>"
+                            . "</a>"
+                        . "</span>"
+                        . "<span class='lien'>"
+                            . "<a href='index.php?pageType=delMachine&idM=$idMachine'>"
                             . "<img src='../assets/img/trash.png' alt='supprimer_machine'/>"
-                            . "</a></span>"     
-                        . "<span class='lien'></span>"
+                            . "</a>"
+                        . "</span>"
                     . "</div>";
     echo $listeMachine;
 }
