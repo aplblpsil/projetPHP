@@ -374,10 +374,13 @@ footer {
 }
 
 #cadrelisteTicket{
-    float:left;
+    /*float:left;*/
+    margin-left: 30%;
 }
 
 #cadreAdmin{
+    position: fixed;
+    width: 25%;
     float:left;
-    clear : left;
+    /*clear : left;*/
 }
