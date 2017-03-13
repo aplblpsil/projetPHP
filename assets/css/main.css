@@ -392,3 +392,32 @@ footer {
 #listeMachines .uneMachine span img{
    max-width: 30px;
 }
+
+/* ------------------------------------------------------------------- */
+/* - Liste des interventions pour l'admin (listeTicketAdmin_vue.php) - */
+/* ------------------------------------------------------------------- */
+.cadrenoir, .cadrerouge, .cadrevert{
+    border : 2px solid #574747;
+    border-radius: 15%;
+    padding : 2%;
+    width : 20%;
+    color: #FFFFFF;
+    display : inline-block;
+}
+.cadrevert{       /*priorité d'intervention faible*/
+    background-color: #0EB006;
+}
+.cadrerouge{    /*priorité d'intervention forte*/
+    background-color: #E90101;
+}
+.cadrenoir{     /*priorité d'intervention urgente*/
+    background-color: #000000;
+}
+#etat{
+    float:right;
+}
+.etat img {
+    max-width: 40px;
+    text-align : center;
+    float : right;
+}
