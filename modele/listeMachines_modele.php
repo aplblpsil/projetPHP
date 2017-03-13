@@ -15,6 +15,8 @@ foreach ($dataMachine as $uneMachine) {
     $formatMachine = $uneMachine['format'];
     $nomUser = $uneMachine['nomUser'];
     $prenomUser = $uneMachine['prenomUser'];
+    $actif = $uneMachine['actif'];
+    if($actif == 1){
     $listeMachine = "<div class='cadreListe'>"
                         . "<span class='info'><b>Type du terminal</b> ".$formatMachine."</span> "
                         . "<span class='info'><b>Numéro machine</b> ".$numMachine."</span> "
@@ -32,4 +34,5 @@ foreach ($dataMachine as $uneMachine) {
                         . "</span>"
                     . "</div>";
     echo $listeMachine;
+    }
 }

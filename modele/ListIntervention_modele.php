@@ -26,6 +26,7 @@ $cadreInterv ="";
 
 foreach ($dataIntervention as $uneIntervention) {
     
+    $idIntervention = $uneIntervention['id'];
     $priorite = $uneIntervention['nomP'];
     $dateInt = $uneIntervention['dateInt'];
     $dateFin = $uneIntervention['dateFin'];
@@ -34,7 +35,28 @@ foreach ($dataIntervention as $uneIntervention) {
     $machine = $uneIntervention['nomM'];
     $etat = $uneIntervention['etat'];    
     
-    $cadreInterv = "<div class='intervention'>"            
+    //test avec les ancienne class car probleme de maj css
+    $cadreInterv = "<div class='user'>"            
+                      . "<span class='info'> $priorite</span><br /> "
+                      . "<span class='info'><span>Date de l'intervention:</span> $dateInt</span><br /> "
+                      . "<span class='info'><span>Date de fin:</span> $dateFin</span><br /> "
+                      . "<textarea class='info'>$msg</textarea><br /> "
+                      . "<span class='info'><span>Numéro de la salle :</span> $salle</span><br /> "
+                      . "<span class='info'><span>Numéro de la machine :</span> $machine</span><br /> ";
+                    
+                    if($etat == 'Terminée') {
+    $cadreInterv .= "<span><img src='../assets/img/ok-button.png' alt=''></span><br /> Terminée <br /><br /><br />";
+                    } else {
+    $cadreInterv .= "<span><img src='../assets/img/warning-2' alt=''></span><br /> En cours de traitement<br /><br /><br />";
+                    }
+                    
+    $cadreInterv .= "<span class='lien'><a href='index.php?pageType=delIntervention&idIntervention=".$idIntervention."'>"
+                        . "<img src='../assets/img/trash.png' alt='supprimer_intervention'/>"
+                        . "</a></span>";   
+                    
+    $cadreInterv .= "</div>";
+    
+    /*$cadreInterv = "<div class='intervention'>"            
                       . "<span class='infoIntervention'> $priorite</span><br /> "
                       . "<span class='infoIntervention'><span>Date de l'intervention:</span> $dateInt</span><br /> "
                       . "<span class='infoIntervention'><span>Date de fin:</span> $dateFin</span><br /> "
@@ -46,7 +68,7 @@ foreach ($dataIntervention as $uneIntervention) {
     $cadreInterv .= "<span class='infoIntervention'><img src='../assets/img/ok-button.png' alt=''></span><br /> Terminée <br /><br /><br />";
                     } else {
     $cadreInterv .= "<span class='infoIntervention'><img src='../assets/img/warning-2' alt=''></span><br /> En cours de traitement<br /><br /><br />";
-                    }
+                    }*/
     echo $cadreInterv;
     
 }
