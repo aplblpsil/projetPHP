@@ -4,7 +4,7 @@ if(isset($_GET['idUser'])){
     $id=$_GET['idUser'];
 }
 
-$stmt = $bdd->prepare("UPDATE Utilisateur SET etat=0 WHERE id= :id;");
+$stmt = $bdd->prepare("UPDATE utilisateur SET etat=0 WHERE id= :id;");
 $stmt->bindValue('id', $id, PDO::PARAM_INT);
 print_r($stmt);
 $stmt->execute();

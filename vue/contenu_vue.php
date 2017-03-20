@@ -26,9 +26,12 @@ if(isset($_GET['pageType'])) {
                     // gestion infrastructure
                     case 'globalIncident':        include('listeIncident_vue.php');             break;
                     case 'globalMachine':         include('listeMachine_vue.php');              break;
-                    
+                    case 'modifMachine':          include('modifMachine_vue.php'); break;
+                    case 'delMachine':            include('../modele/delMachine_modele.php');   break;
                     // gestion des interventions
-                    case 'globalInterventions' :  include('listeTicketAdmin_vue.php');         break;
+                    case 'globalInterventions' :  include('listeTicketAdmin_vue.php');          break;
+                    case 'intervTicket' :         include('intervTicketAdmin_vue.php');         break;
+                    
 
                     default:                      include('error404_vue.php');
                 }
@@ -38,7 +41,7 @@ if(isset($_GET['pageType'])) {
                 switch ($laPage) {
                     case 'deconnexion':           include('../modele/deconnexion_modele.php');  break;
                     case 'accueil':               include('accueil_vue.php');                   break;
-                    case 'globalTicketU':         include('listeTicketUser_vue.php');            break;
+                    case 'globalTicketU':         include('listeTicketUser_vue.php');           break;
                     case 'addTicketU' :           include('addTicketUser_vue.php');             break;
 
                     default:                      include('error404_vue.php');
@@ -49,8 +52,9 @@ if(isset($_GET['pageType'])) {
                 switch ($laPage) {
                     case 'deconnexion':           include('../modele/deconnexion_modele.php');  break;
                     case 'accueil':               include('accueil_vue.php');                   break;
-                    case 'addIntervention':       include('addIntervention_vue.php');           break;
-                    case 'listIntervention':       include('ListIntervention_vue.php');           break;
+                    case 'globalTicketG':         include('listeTicketGestion_vue.php');        break;      
+                    case 'delIntervention':       include('../modele/delIntervention_modele.php'); break;                  
+                    case 'globalInterventions':   include('ListIntervention_vue.php');          break;
 
                     default:                      include('error404_vue.php');
                 }

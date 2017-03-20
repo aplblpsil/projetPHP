@@ -48,15 +48,35 @@
 .btSubmit:hover {
     background: #58ACFA;
 }
-
 .msgSucces {
     color: green;
     font-size: 12px;
 }
-
 .msgError {
     color: red;
     font-size: 12px;
+}
+.cadreListe {
+    border: solid 1px dodgerblue;
+    border-bottom-right-radius: 40px;
+    background: linear-gradient(to top right, #FAFAFA, #CED8F6, #FAFAFA);
+    margin-bottom: 1%;
+    padding: 5px 0px 10px 10px;
+    display: flex;
+}
+.lien img {
+    max-width: 30px;
+    margin-right: 5px;
+    display: inline-block;
+}
+.info {
+   width : 20%;
+   text-align : left;
+   display: inline-block;
+   margin: auto;
+}
+.lien {
+    width: 5%;
 }
 
 /* -------------------- */
@@ -64,7 +84,7 @@
 /* -------------------- */
 
 html, body {
-    background-color: whitesmoke;
+    background-color: #F2F2F2;
     font-family: sans-serif;
     font-size: 14px;
     width: 100%;
@@ -153,7 +173,7 @@ footer {
     width: 100%;
     padding-top: 5px;
     bottom: 0;
-    position: absolute;
+    position: fixed;
     border-top: solid 1px dodgerblue;
     background: linear-gradient(to top left, #F6F6F6, #F2F2F2, #FAFAFA);
     box-shadow: 0 -1px 3px 1px rgba(75, 75, 75, 0.3);
@@ -261,30 +281,7 @@ footer {
 /* ---------------------------------------------- */
 /* - Liste des utilisateurs (listeUser_vue.php) - */
 /* ---------------------------------------------- */
-.user{
-    border: solid 1px dodgerblue;
-    border-bottom-right-radius: 40px;
-    background: linear-gradient(to top right, #FAFAFA, #CED8F6, #FAFAFA);
-    margin-bottom: 1%;
-    padding: 5px 0px 10px 10px;
-    display: flex;
-}
 
-.info {
-   width : 20%;
-   text-align : left;
-   display: inline-block;
-   margin: auto;
-}
-.user img {
-    max-width: 30px;
-    margin-right: 5px;
-    display: inline-block;
-}
-
-.lien{
-    width: 5%;
-}
 
 /* ----------------------------------------- */
 /* - liste ticket (viewTicketUser_vue.php) - */
@@ -371,38 +368,33 @@ footer {
    margin: auto;
 }
 
-/* ------------------------------------------------- */
-/* - liste machines (listeMachine_vue.php) - */
-/* ------------------------------------------------- */
+#cadrelisteTicket{
+    /*float:left;*/
+    margin-left: 30%;
+}
 
-#listeMachines .uneMachine {
-    border: solid 1px dodgerblue;
-    border-bottom-right-radius: 40px;
-    background: linear-gradient(to top right, #FAFAFA, #CED8F6, #FAFAFA);
-    margin-bottom: 1%;
-    padding: 5px 0px 10px 10px;
-    display: flex;
-}
-#listeMachines .uneMachine span{
-   width : 20%;
-   text-align : left;
-   display: inline-block;
-   margin: auto;
-}
-#listeMachines .uneMachine span img{
-   max-width: 30px;
+#cadreAdmin{
+    position: fixed;
+    width: 25%;
+    float:left;
+    /*clear : left;*/
 }
 
 /* ------------------------------------------------------------------- */
 /* - Liste des interventions pour l'admin (listeTicketAdmin_vue.php) - */
 /* ------------------------------------------------------------------- */
+.prio{
+    font-weight: bold;
+}
 .cadrenoir, .cadrerouge, .cadrevert{
     border : 2px solid #574747;
-    border-radius: 15%;
+    border-radius: 20%;
     padding : 2%;
     width : 20%;
     color: #FFFFFF;
     display : inline-block;
+    margin-top : 30px;
+    margin-right: 5px;
 }
 .cadrevert{       /*priorité d'intervention faible*/
     background-color: #0EB006;
@@ -420,4 +412,20 @@ footer {
     max-width: 40px;
     text-align : center;
     float : right;
+}
+/* Effet de rebond*/
+.cadrenoir:hover, .cadrerouge:hover, .cadrevert:hover{
+    -webkit-animation: bounce 0.3s ease infinite alternate; /* Safari, Chrome */
+    animation: bounce 0.3s ease infinite alternate; /* Syntaxe IE (normale) */
+}
+
+
+@keyframes bounce{ /* Syntaxe IE (normale) */
+     from {transform: translateY(0);}
+     to   {transform: translateY(-20px);}
+}
+
+@-webkit-keyframes bounce{ /* Safari, Chrome*/
+     from {-webkit-transform: translateY(0);}
+     to   {-webkit-transform: translateY(-20px);}
 }
