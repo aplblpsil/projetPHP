@@ -26,11 +26,12 @@ if(isset($_GET['pageType'])) {
                     // gestion infrastructure
                     case 'globalIncident':        include('listeIncident_vue.php');             break;
                     case 'globalMachine':         include('listeMachine_vue.php');              break;
-                    case 'modifMachine':          include('modifMachine_vue.php'); break;
+                    case 'modifMachine':          include('modifMachine_vue.php');              break;
                     case 'delMachine':            include('../modele/delMachine_modele.php');   break;
                     // gestion des interventions
                     case 'globalInterventions' :  include('listeTicketAdmin_vue.php');          break;
                     case 'intervTicket' :         include('intervTicketAdmin_vue.php');         break;
+                    case 'updateInterv' :         include('../modele/updateInterv_modele.php'); break;
                     
 
                     default:                      include('error404_vue.php');
