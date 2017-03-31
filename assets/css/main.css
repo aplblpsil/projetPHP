@@ -163,7 +163,7 @@ header {
 
 #container {
     padding: 5px;
-    margin: 5px;
+    margin: 10px 0 75px 0;
 }
 
 /* ---------------------------- */
@@ -367,19 +367,27 @@ footer {
    text-align : left;
    display: inline-block;
    margin: auto;
+   margin-left: 5px;
+   margin-right: 5px;
 }
 
 #cadrelisteTicket{
-    /*float:left;*/
-    margin-left: 30%;
+    float:left;
+    clear : left;
 }
 
 #cadreAdmin{
     position: fixed;
-    width: 25%;
+    width: 20%;
     float:left;
-    /*clear : left;*/
+    clear : left;
+    background-color: #CED8F6;
 }
+
+#btHidden{
+    visibility: hidden;
+}
+
 
 /* ------------------------------------------------------------------- */
 /* - Liste des interventions pour l'admin (listeTicketAdmin_vue.php) - */
