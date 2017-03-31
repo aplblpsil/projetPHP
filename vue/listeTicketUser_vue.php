@@ -11,13 +11,14 @@
             }
         }
     ?>
-    <div id='cadrelisteTicket'>
-        <?php include('../modele/listeTicketUser_modele.php') ?>
-    </div>
     <div class="cadreAdd">
         <a class='btAdd' href="index.php?pageType=addTicketU">
             <img src="../assets/img/add-2.png" alt="btPlus">
             <span>Créer un ticket d'incident</span>
         </a>
     </div>
+    <div id='cadrelisteTicket'>
+        <?php include('../modele/listeTicketUser_modele.php') ?>
+    </div>
+    
 </div>

@@ -14,7 +14,7 @@ $dataAdmin = $repAdmin->fetchAll();
 $cadreAdmin = "<div>"
                 ."<form method='POST' action='../modele/addIntervention_modele.php'>"
                     ."<fieldset>"
-                        ."<legend>Atribution d'un Adiministrateur</legend>"
+                        ."<legend>Attribution d'un Administrateur</legend>"
                         ."<p>Administrateur : </p>"
                         ."<select name='admin'>";
                             foreach ($dataAdmin as $unAdmin) {
@@ -34,12 +34,12 @@ $cadreAdmin = "<div>"
                         //$var = $_POST['priorite'];
                         
                        
-                            $cadreAdmin .="<p>Selectionez dabord un ticket</p>"
-                                ."<input type='text' value='' name='ticketSelect' id='ticketSelect' readonly><br/><br/>"
-                                ."<input type='submit' value='valider' class='btSubmit' disabled='disabled'>";
+                            $cadreAdmin .="<p>Selectionez un ticket</p>"
+                                ."<input type='text' name='ticketSelect' id='ticketSelect' readonly required='required'><br/><br/>"
+                                ."<input type='submit' id='btHidden' name='valider' value='valider' class='btSubmit'>";
                         
                         
-                    $cadreAdmin .="</fieldset"
+                    $cadreAdmin .="</fieldset>"
                 ."</form>"
             ."</div>";                    
          

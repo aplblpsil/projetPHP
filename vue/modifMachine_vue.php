@@ -1,11 +1,11 @@
 <div>
-    <h3>Modifier l'utilisateur</h3>
+    <h3>Modifier une machine</h3>
     <?php include("../modele/modifMachine_modele.php"); ?>
 
     <form method="POST" action="../modele/insertModifMachine_modele.php">
-        <fieldset  id="formModifUser">
-            <legend>Profil</legend>
-            <!-- informations sur l'utilisateur -->
+        <fieldset  id="formModifMachine">
+            <legend>Caractéristiques:</legend>
+            <!-- informations sur la machine -->
             <input type="text" name="idM" value="<?php echo $idMachine; ?>" hidden="hidden"/>
             
             <label for="ztFormat">Format :</label><br />

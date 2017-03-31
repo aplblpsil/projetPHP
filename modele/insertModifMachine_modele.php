@@ -1,21 +1,29 @@
 <?php
 include('bdd_connect.php');
-$idUser = $_POST['idUser'];
-$mail = $_POST['ztMail'];
-$nom = $_POST['ztNom'];
-$prenom = $_POST['ztPrenom'];
-$date = $_POST['ztDateNaiss'];
-$dateConvertion = new DateTime();
-$dateConverted = $dateConvertion->createFromFormat('d/m/Y', $date);
-$dateN = $dateConverted->format('Y-m-d');
-$tel = $_POST['ztTel'];
-$fonction = $_POST['ztFonction'];
 
-$sql = "UPDATE utilisateur SET mailLogin='".$mail."', nom='".$nom."', prenom='".$prenom."', dateNaiss='".$dateN."', tel='".$tel."', idFonction=".$fonction.""
-     . " WHERE id=".$idUser.";";
+$idM = $_POST['idM'];
+$user = $_POST['ztAttribution'];
+$salle = $_POST['ztSalle'];
+$anneeAchat = $_POST['ztDateAchat'];
+$format = $_POST['ztFormat'];
+$nomMachine = $_POST['ztMachine'];
+$numSerie = $_POST['ztNumSerie'];
+$os = $_POST['ztOS'];
+$fabriquant = $_POST['ztFabriquant'];
 
-$bdd->exec($sql);
+if($idM && $user && $salle && $anneeAchat && $format && $nomMachine && $numSerie && $os && $fabriquant) {
 
-header('Location: ../control/index.php?pageType=globalUser&edited=true');
+    $bdd->query("SET NAMES UTF8");
 
+    $sql = "UPDATE machine SET "
+         . "idUser=".$user.", idSalle=".$salle.", anneeAchat='".$anneeAchat."',"
+         . "format='".$format."', nom='".$nomMachine."', numSerie='".$numSerie."',"
+         . "os='".$os."', fabriquant='".$fabriquant."' "
+         . "WHERE id=".$idM.";";
 
+    $bdd->exec($sql);
+
+    header('Location: ../control/index.php?pageType=globalMachine&edited=true');
+} else {
+    header('Location: ../control/index.php?pageType=globalMachine&edited=error');
+}

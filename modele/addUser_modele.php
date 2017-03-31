@@ -26,4 +26,4 @@ include ("bdd_connect.php");
         
         $bdd->exec($sql);							// Execution de la requete
 	
-        echo "enregistrement effectué";
+        header("location: ../control/index.php?pageType=globalUser&added=true");

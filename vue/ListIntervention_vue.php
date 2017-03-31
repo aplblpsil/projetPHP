@@ -8,6 +8,6 @@
     <?php 
     } ?>
         
-<div id="listVue">
-    <a><?php include("../modele/ListIntervention_modele.php"); ?></a>
+<div>
+    <?php include("../modele/ListIntervention_modele.php"); ?>
 </div>

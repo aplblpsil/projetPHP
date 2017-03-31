@@ -26,6 +26,6 @@ $dateTicket = $dateConvertion->format('Y-m-d');
     $bdd->query("SET NAMES UTF8");
     $bdd->query($sql);
     
-    header("location: ../control/index.php?pageType=viewTicketU&access=Salarié&ac=added");
+    header("location: ../control/index.php?pageType=globalTicketU&access=Salarié&ac=added");
 
 ?>

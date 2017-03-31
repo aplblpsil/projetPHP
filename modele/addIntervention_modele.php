@@ -12,9 +12,18 @@ if(isset($_POST['priorite'])){
 if(isset($_POST['ticketSelect'])){
     $ticket=$_POST['ticketSelect'];
 }
-$sql = 'INSERT INTO Intervention(idUser, idPriorite,idIncident)VALUES('.$admin.','.$ticket.','.$priorite.');';
-//print_r($sql);
-$bdd->exec($sql);
+$req = "SELECT resolu FROM incident WHERE id=".$ticket.";";
+$res=$bdd->query($req);
+$res->fetch();
+
+if($res == 0){
+    $sql = 'INSERT INTO Intervention(idUser, idPriorite,idIncident)VALUES('.$admin.','.$priorite.','.$ticket.');';
+    //print_r($sql);
+    $bdd->exec($sql);
+    header("location: ../control/index.php?pageType=globalTicketG&Int=cree");
+}else{
+    header("location: ../control/index.php?pageType=globalTicketG&Int=erreur");
+}
 
 
 ?>

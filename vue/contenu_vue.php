@@ -26,8 +26,15 @@ if(isset($_GET['pageType'])) {
                     // gestion infrastructure
                     case 'globalIncident':        include('listeIncident_vue.php');             break;
                     case 'globalMachine':         include('listeMachine_vue.php');              break;
+                    case 'addMachine':            include('addMachine_vue.php');                break; 
                     case 'modifMachine':          include('modifMachine_vue.php');              break;
                     case 'delMachine':            include('../modele/delMachine_modele.php');   break;
+                                        // gestion logiciel
+                    case 'globalLogiciel':        include('listeLogiciel_vue.php');             break;
+                    case 'modifLogiciel':         include('modifLogiciel_vue.php');             break;
+                    case 'delLogiciel':           include('../modele/delLogiciel_modele.php');  break;
+                    case 'addLogiciel':           include('addLogiciel_vue.php');               break;   
+
                     // gestion des interventions
                     case 'globalInterventions' :  include('listeTicketAdmin_vue.php');          break;
                     case 'intervTicket' :         include('intervTicketAdmin_vue.php');         break;

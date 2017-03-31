@@ -5,34 +5,27 @@
     </div>
     <div id='header_right'>
         <ul>
+            <li><a href="index.php?pageType=accueil">accueil</a></li>
             <?php
             if(isset($_SESSION['idU'])) {
+                include('../modele/lienHeader_modele.php');
                 $fonction = $_SESSION['fonctionU'];
-                if($fonction == 'Administrateur') { /* menu de l'admin */ ?>
-                    <li><a href="index.php?pageType=accueil">accueil</a></li>
-                    <li><a href="index.php?pageType=addUser">Inscription</a></li>
-                    <li><a href="index.php?pageType=globalUser">Liste utilisateurs</a></li>
-                    <li><a href="index.php?pageType=globalMachine">Liste machines</a></li>
-                      <li><a href="index.php?pageType=globalInterventions">Intervenir</a></li>
-                    <li><a href="index.php?pageType=deconnexion">d&eacute;connexion</a></li>
-                    
-            <?php } if($fonction == 'Salarié') { /* menu de l'user */ ?>
-                    <li><a href="index.php?pageType=accueil">accueil</a></li>
-                    <li><a href="index.php?pageType=globalTicketU">mes tickets</a></li>
-                    <li><a href="index.php?pageType=deconnexion">d&eacute;connexion</a></li>
-                    
-            <?php } if($fonction == 'Gestionnaire') { /* menu du gestionnaire */ ?>           
-                    <li><a href="index.php?pageType=accueil">accueil</a></li>
-                    <li><a href="index.php?pageType=globalTicketG">création des interventions</a></li>
-                    <li><a href="index.php?pageType=globalInterventions">liste des interventions</a></li>
-                    <li><a href="index.php?pageType=deconnexion">d&eacute;connexion</a></li>
-                    
-            <?php } 
+                if($fonction == 'Administrateur') { /* menu de l'admin */       
+                    echo $admin;
+                } if($fonction == 'Salarié') { /* menu de l'user */
+                    echo $salarie;
+                } if($fonction == 'Gestionnaire') { /* menu du gestionnaire */ 
+                    echo $gestionnaire;
+                } 
+            ?>
+                <li><a href="index.php?pageType=deconnexion">d&eacute;connexion</a></li>
+            <?php
             } else { 
             ?>
-                    <li><a href="index.php?pageType=accueil">accueil</a></li>
-                    <li><a href="index.php?pageType=connexion">connexion</a></li>
-            <?php } ?>
+                <li><a href="index.php?pageType=connexion">connexion</a></li      
+            <?php 
+            }
+            ?>
         </ul>
     </div>
 </header>

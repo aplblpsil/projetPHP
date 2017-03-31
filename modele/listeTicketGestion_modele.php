@@ -25,7 +25,7 @@ foreach ($dataTicketUser as $unTicket) {
     $numMachine = $unTicket['numSerie'];
     $nomMachine = $unTicket['nomMachine'];
     
-    $cadreTicket = "<div>"
+    $cadreTicket = "<div class='cadrelisteTicket'>"
                       . "<span><span>Objet du problème:</span> $titre</span><br /><br />"
                       . "<span><span>Machine concerné:</span> $numMachine - $nomMachine</span><br /> "
                       . "<span><span>Date de l'incident:</span> $dateTicket</span><br /> "
@@ -37,9 +37,6 @@ foreach ($dataTicketUser as $unTicket) {
                     } else {
     $cadreTicket .= "<span><img src='../assets/img/warning-2.png' alt='ticket_en_cours'></span><br /> En cours de traitement<br />";
                     }
-    $cadreTicket .= "<form method='POST' action='../modele/listeTicketGestion_vue.php'>"
-                    ."<input type='submit' value='selectioner' class='btSubmit'>"
-                    . "</form>";
     
     $cadreTicket .= "<span onclick='selection($idTicket);'><img src='../assets/img/logo.png' alt='logo'></span><br />";
     
