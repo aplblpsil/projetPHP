@@ -172,7 +172,7 @@ header {
 
 footer {
     width: 100%;
-    padding-top: 5px;
+    padding-top: 3px;
     bottom: 0;
     position: fixed;
     border-top: solid 1px dodgerblue;
@@ -185,20 +185,7 @@ footer {
 #footer_left {
     color: grey;
     font-size: 11px;
-    margin: 5px 0 0 15px;
-}
-#footer_right  {
-    float: right;
-    margin-right: 20px; ;
-}
-#footer_right p {
-    color: dodgerblue;
-    font-weight: bold;
-    transition: all 0.2s ease-in-out;
-}
-#footer_right p:hover {
-    color: #DBA901;
-    cursor: pointer;
+    margin-left: 15px;
 }
 
 /* -------------------------------------- */
@@ -292,6 +279,7 @@ footer {
     display: inline-block;
     margin-left: 25%;
     margin-right: 25%;
+    margin-bottom: 50px;
     width: 50%;
 }
 #cadrelisteTicket > div {
